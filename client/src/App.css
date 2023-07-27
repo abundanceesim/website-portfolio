@@ -1,0 +1,96 @@
+/*added this*/
+body {
+  background-color: #05021d;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li a{
+  color: white;
+  list-style: none;
+  text-decoration: none !important;
+}
+
+.navbar {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+  cursor: pointer; 
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(243, 74, 74);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+/* 
+/*Navbar code (delete)*/
+/* App.css */
+/* .navbar {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration:underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+ul li {
+
+}
+
+.main-content {
+  padding: 20px;
+}
+
+/* Optional: Style active link */
+/* .nav-item.active {
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}  */
