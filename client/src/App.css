@@ -7,10 +7,41 @@ body {
   color: white;
 }
 
+.not-found-error {
+  text-align: center;
+}
+
+.not-found  {
+  width: 50%;
+}
+
 .container {
-  width: 62%;
+  width: 57%;
   height: 100vh;
   margin: 0 auto;
+}
+
+.back-to-home {
+  text-align: center;
+  /* background-color: red; */
+}
+
+a.redirect-to-home{
+  /* border: solid 1px rgb(235, 235, 250);
+   */
+  border: solid 1px #2196F3;
+  color: dodgerblue;
+  border-radius: 5px;
+  padding: 8px;
+  text-decoration: none !important;
+  /* color: rgb(235, 235, 250); */
+}
+
+a.redirect-to-home:hover {
+  border: solid 1px #2196F3;
+  background-color: #2196F3;
+  color: rgb(235, 235, 250);
+  text-decoration: none !important;
 }
 
 .active {
