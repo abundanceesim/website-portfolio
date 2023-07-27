@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, NavLink,Link1 } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, NavLink,Link } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
@@ -40,7 +40,7 @@ export default function Header() {
             </div>
           </li>
           <li className="nav-item">
-            <NavLink to="/about" activeClassName="active">
+            <NavLink to="/about" activeClassName="active"> 
               About
             </NavLink>
           </li>

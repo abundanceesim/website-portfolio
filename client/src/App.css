@@ -1,15 +1,31 @@
-/*added this*/
 body {
-  background-color: #05021d;
+  /* background-color: #05021d; */
+  background-image: linear-gradient( #05021d, #0b0635);
+  height: 100vh;
   color: white;
 }
+
+.active {
+  color: rgb(159, 159, 255);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color:rgb(191, 191, 252);
+}
+
 
 ul {
   list-style: none;
+  margin: 0 auto;
 }
 
 li a{
-  color: white;
+  color: rgb(235, 235, 250);
   list-style: none;
   text-decoration: none !important;
 }
@@ -32,6 +48,7 @@ li a{
 .nav-menu {
   list-style: none;
   display: flex;
+  padding: 14px;
 }
 
 .nav-item {
@@ -47,7 +64,7 @@ li a{
 }
 
 .main-content {
-  padding: 20px;
+  padding: 2px;
 }
 
 /* 
