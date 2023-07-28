@@ -8,11 +8,17 @@ export default function NotFound() {
         <img className="not-found" src={ErrorImage} alt="" />
         <p>Sorry, the page you are looking for does not exist</p>
       </div>
-      <div className='back-to-home'>
-        <Link to="/" className="redirect-to-home">
+      <div className="back-to-home">
+        <Link to="/" className="btn btn-outline-primary redirect-to-home">
           Return to Home
         </Link>
       </div>
+
+      {/* <div className='back-to-home'>
+        <Link to="/" className="redirect-to-home">
+          Return to Home
+        </Link>
+      </div> */}
       {/* <div>404</div>
       <div>Page Not Found</div> */}
     </>
