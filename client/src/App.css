@@ -2,19 +2,44 @@
 
 body {
   /* background-color: #05021d; */
-  background-image: linear-gradient( #05021d, #0b0635);
+  background-image: linear-gradient( #03032b, #0d083d);
   height: 100%;
   color: white;
 }
 
-.container {
-  width: 62%;
+.not-found-error {
+  text-align: center;
+}
+
+.not-found  {
+  width: 50%;
+}
+
+.main {
+  width: 57%;
   height: 100vh;
   margin: 0 auto;
 }
 
+.back-to-home {
+  text-align: center;
+}
+
+a.redirect-to-home{
+  border: solid 1px #91cdff;
+  color: #93ceff;
+}
+
+a.redirect-to-home:hover {
+  border: solid 1px #3f9de9;
+  background-color: #2196F3;
+  color: rgb(235, 235, 250);
+  text-decoration: none !important;
+}
+
 .active {
-  color: rgb(159, 159, 255);
+  /* color: rgb(159, 159, 255); */
+  color: rgb(236, 66, 137);
 }
 
 .footer {
@@ -40,10 +65,11 @@ li a{
 
 .navbar {
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 .nav-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,11 +116,70 @@ li a{
 
 .nav-item:hover {
   text-decoration: underline;
-  text-decoration-color: rgb(243, 74, 74);
+  /* text-decoration-color: rgb(243, 74, 74); */
+  text-decoration-color: rgb(236, 66, 137);
   text-decoration-thickness: 4px;
   text-underline-offset: 8px;
 }
 
 .main-content {
   padding: 2px;
+}
+
+.form-control {
+  border-radius: 11px;
+  padding: 8.5px;
+  background: none;
+  color: rgba(255, 255, 255, 0.815);
+  border-color: #bdcbfc60;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.233);
+}
+
+.form-control:focus {
+  background: none;
+  color: white;
+}
+
+.message {
+  height: 220px;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+}
+
+.contact-form {
+  padding-top: 20px;
+  width: 47%;
+  margin: 0 auto;
+}
+
+.name-and-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name, .email {
+  width: 47%;
+}
+
+.submit {
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: rgb(236, 66, 137) !important;
+  border-color: rgb(236, 66, 137) !important;;
+  width: 50%;
+}
+
+.submit-btn:hover {
+  background-color: transparent !important;
+  color: rgb(236, 66, 137) !important;
 }
