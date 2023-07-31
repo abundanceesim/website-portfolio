@@ -1,2 +1,2 @@
 # website-portfolio
-Website portfolio for Abundance Esim
+Website portfolio made with React.js
