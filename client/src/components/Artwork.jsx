@@ -1,9 +1,8 @@
 
 export default function Artwork({artwork}) {
   return (
-    <div>
-      <strong>Description: </strong>
-      {artwork.description}
+    <div className="img-wrapper">
+      <img className="artwork" src={artwork.src} alt="" />
     </div>
   );
 }

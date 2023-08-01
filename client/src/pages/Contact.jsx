@@ -23,9 +23,6 @@ export default function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    // console.log(name, email, subject, message);
-    // console.log(`Invalid? ${isInvalid}`);
-    // sent = true
     setName('')
     setEmail('')
     setSubject('')

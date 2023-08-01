@@ -1,40 +1,60 @@
 import Artwork from '../components/Artwork'
+import flame from '../assets/art/flame.png'
+import figureDrawing from "../assets/art/figure-drawing.png"
+import greyWoman from '../assets/art/grey-woman.png'
+import glassfish from '../assets/art/glassfish.png'
 
 export default function Artworks() {
 
   const artworks = [
     {
       id: 1,
-      src: "",
-      description: "FIrst artwork",
+      src: figureDrawing,
+      description: "figure-drawing-img",
     },
     {
       id: 2,
-      src: "sdjskdj",
-      description: "Secondddd",
+      src: flame,
+      description: "matchstick-with-flame",
     },
     {
       id: 3,
-      src: "lol",
-      description: "third lol",
+      src: greyWoman,
+      description: "woman-in-greyscale",
     },
     {
       id: 4,
-      src: "sduissd",
-      description: "4th",
+      src: glassfish,
+      description: "glassfish-in-glass",
     },
+    {
+      id: 5,
+      src: glassfish,
+      description: "glassfish-in-glass",
+    },
+    {
+      id: 6,
+      src: glassfish,
+      description: "glassfish-in-glass",
+    },
+
   ];
 
-  console.log(artworks);
+  // console.log(artworks);
   return (
     <>
-      <div className="art-container">
-        {artworks.map((art) => (
-          <div className="row mt-4">
-            <Artwork artwork={art} key={art.id} />
-          </div>
-        ))}
-      </div>
+      {artworks.length > 0 ? (
+      <div className="art-page">
+        <div className="row mt-4">
+          {artworks.map((art) => (
+            <div className="col-4 mb-3">
+              <Artwork artwork={art} key={art.id} />
+            </div>
+          ))}
+        </div>
+      </div>) : (
+        <h3>No art found.</h3>
+      )}
     </>
   );
 }

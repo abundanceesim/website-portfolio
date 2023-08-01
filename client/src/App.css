@@ -7,6 +7,7 @@ body {
   color: white;
 }
 
+/*------Page Not Found-----------------*/
 .not-found-error {
   text-align: center;
 }
@@ -15,16 +16,17 @@ body {
   width: 50%;
 }
 
+.back-to-home {
+  text-align: center;
+}
+
 .main {
   width: 57%;
   height: 100vh;
   margin: 0 auto;
 }
 
-.back-to-home {
-  text-align: center;
-}
-
+/*--------------Header-------------------*/
 a.redirect-to-home{
   border: solid 1px #91cdff;
   color: #93ceff;
@@ -42,14 +44,6 @@ a.redirect-to-home:hover {
   color: rgb(236, 66, 137);
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  color:rgb(191, 191, 252);
-}
 
 
 ul {
@@ -126,6 +120,7 @@ li a{
   padding: 2px;
 }
 
+/*----------------Contact Page---------------------*/
 .form-control {
   border-radius: 11px;
   padding: 8.5px;
@@ -183,3 +178,65 @@ li a{
   background-color: transparent !important;
   color: rgb(236, 66, 137) !important;
 }
+
+/*-----------------Art page-----------------------*/
+.img-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.artwork {
+  width: 300px;
+  height: 300px;
+  border-radius: 18px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  vertical-align: middle;
+}
+
+.artwork:hover {
+  -webkit-transform: scale(1.25); /*chromw*/
+  -moz-transform: scale(1.25); /*mozilla*/
+  -ms-transform: scale(1.25); /*IE*/
+  -o-transform: scale(1.25); /* Opera */
+  transform: scale(1.25);
+}
+
+.art-page {
+  padding: 15px;
+  margin: 0 auto;
+  width: 89%;
+  border-radius: 10px;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+/*---------Projects page----------------------*/
+.project-container img {
+  width: 520px;
+  height: 300px;
+}
+
+/*------------Footer-----------------*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: rgb(191, 191, 252);
+}
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(191, 191, 252);
+  padding: 28px;
+  text-align: center;
+} */
