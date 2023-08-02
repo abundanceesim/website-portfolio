@@ -216,9 +216,17 @@ li a{
 }
 
 /*---------Projects page----------------------*/
+.projects {
+  padding-top: 30px;
+  width: 92%;
+  margin: 0 auto;
+}
+
 .project-container img {
-  width: 520px;
+  width: 480px;
   height: 300px;
+  margin-bottom: 10px;
+  border-radius: 14px;
 }
 
 /*------------Footer-----------------*/

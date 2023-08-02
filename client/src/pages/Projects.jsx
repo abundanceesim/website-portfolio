@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <>
       {projects.length > 0 ? (
-        <div className='container'>
+        <div className='container projects'>
           <div className="row">
             {projects.map((project) => (
               <div className="col-6 mb-4">

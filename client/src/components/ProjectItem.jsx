@@ -4,9 +4,9 @@ function ProjectItem({project}) {
   return (
     <>
       <div className="project-container">
-        <div className="project-img" >
-          <img src={project.screenshot} alt="" style={{borderRadius: "10px"}} />
-        </div>
+        {/* <div className="project-img" > */}
+          <img src={project.screenshot} alt=""  />
+        {/* </div> */}
       </div>
       <div>
         <h5>{project.title}</h5>
