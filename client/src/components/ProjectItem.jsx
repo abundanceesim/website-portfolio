@@ -5,7 +5,7 @@ function ProjectItem({project}) {
     <>
       <div className="project-container">
         {/* <div className="project-img" > */}
-          <img src={project.screenshot} alt=""  />
+          <img src={project.screenshot} alt={project.shortTitle + "-img"}  />
         {/* </div> */}
       </div>
       <div>
