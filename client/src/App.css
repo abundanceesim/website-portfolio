@@ -153,6 +153,7 @@ li a{
 .contact-form {
   padding-top: 20px;
   width: 47%;
+  min-width: fit-content;
   margin: 0 auto;
 }
 
@@ -184,7 +185,7 @@ li a{
 .img-wrapper {
   display: inline-block;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 20px;
 }
 
 .artwork {
@@ -232,6 +233,9 @@ li a{
   border-radius: 14px;
 }
 
+/* .project-img {
+  width: 80%;
+} */
 /*------------Footer-----------------*/
 .footer {
   position: absolute;

@@ -47,16 +47,6 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "Potato Inventory App",
-      description:
-        "Console-based inventory application for the manipulation of records from dataset about potatoes",
-      link: "https://github.com/abundanceesim/potato-inventory-app",
-      shortTitle: "potato-inventory",
-      screenshot: potatoInventory,
-      technologies: ["python", "pytest"],
-    },
-    {
-      id: 4,
       title: "Products Web App",
       description:
         "Products web application where users can retrieve and modify product records of their choice from a MySQL database.",
@@ -65,11 +55,18 @@ export default function Projects() {
       screenshot: productsApp,
       technologies: ["mysql", "php", "css", "sql"],
     },
+    {
+      id: 4,
+      title: "Potato Inventory App",
+      description:
+        "Console-based inventory application for the manipulation of records from dataset about potatoes",
+      link: "https://github.com/abundanceesim/potato-inventory-app",
+      shortTitle: "potato-inventory",
+      screenshot: potatoInventory,
+      technologies: ["python", "pytest"],
+    },
   ];
 
-  const showTitle = (project)=> {
-    console.log(`Project: ${project.title}`);
-  }
 
   return (
     <>
@@ -77,8 +74,8 @@ export default function Projects() {
         <div className='container projects'>
           <div className="row">
             {projects.map((project) => (
-              <div className="col mb-5" onClick={(project) => showTitle(project)}>
-                <ProjectItem project={project}/>
+              <div className="col mb-5">
+                <ProjectItem project={project} key={project}/>
               </div>
             ))}
           </div>
