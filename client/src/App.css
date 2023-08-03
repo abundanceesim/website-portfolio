@@ -224,6 +224,7 @@ li a{
   padding-top: 30px;
   width: 92%;
   margin: 0 auto;
+  min-width: min-content;
 }
 
 .project-container img {
@@ -231,6 +232,24 @@ li a{
   height: 300px;
   margin-bottom: 10px;
   border-radius: 14px;
+}
+
+.github-btn {
+  padding: 14px;
+  text-align: right;
+}
+
+.github-source-btn {
+  width: 26%;
+  border-color: rgb(236, 66, 137) !important;
+  background-color: transparent !important;
+  color: rgb(236, 66, 137) !important;
+}
+
+.github-source-btn:hover {
+  background-color: rgb(236, 66, 137) !important;
+  border-color: rgb(236, 66, 137) !important;
+  color: white !important;
 }
 
 /* .project-img {
