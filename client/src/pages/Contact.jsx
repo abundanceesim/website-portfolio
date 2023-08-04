@@ -1,4 +1,5 @@
 import { useState } from "react"
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   //add form validation
@@ -21,14 +22,34 @@ export default function Contact() {
 
   let isInvalid = (!name || !isEmailValid || !subject || !message)
 
-  const onSubmit = (e) => {
-    e.preventDefault()
-    setName('')
-    setEmail('')
-    setSubject('')
-    setMessage('');
-    // return true
-  }
+   const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("gmail", "template_u2smn3d", e.target, "e_Wn1g4MXoyuGGwAM")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+      e.target.reset()
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+  };
+
+  // const onSubmit = (e) => {
+  //   e.preventDefault()
+  //   setName('')
+  //   setEmail('')
+  //   setSubject('')
+  //   setMessage('');
+  //   // return true
+  // }
 
   // let sent = onSubmit;
 
@@ -36,35 +57,35 @@ export default function Contact() {
     <>
       <div className="contact-heading"><h1>Let's Connect!</h1></div>
       
-      <form className='contact-form'>
+      <form onSubmit={sendEmail} className='contact-form'>
         <div className="name-and-email">
           <div className="mb-3 name">
             <label htmlFor="name" className="form-label">Name</label>
-            <input type="text" className="form-control" id="name"
+            <input type="text" className="form-control" name="name"
               aria-describedby="emailHelp" placeholder={nameHolder}
               value={name} onChange={(e) => setName(e.target.value)}/>
           </div>
           <div className="mb-3 email">
             <label htmlFor="email" className="form-label">Email</label>
-            <input type="email" className="form-control" id="email"
+            <input type="email" className="form-control" name="email"
              aria-describedby="emailHelp" placeholder={emailHolder}
              value={email} onChange={(e) => setEmail(e.target.value)}/>
           </div>
         </div>
         <div className="mb-3">
           <label htmlFor="subject" className="form-label">Subject</label>
-          <input type="text" className="form-control" id="subject"
+          <input type="text" className="form-control" name="subject"
            aria-describedby="emailHelp" placeholder={subjectHolder}
            value={subject} onChange={(e) => setSubject(e.target.value)}/>
         </div>
         <div className="mb-3">
           <label htmlFor="message" className="form-label">Message</label>
           <textarea type="text" className="form-control message"
-           id="message" aria-describedby="emailHelp" placeholder={msgHolder}
+           name="message" aria-describedby="emailHelp" placeholder={msgHolder}
            value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
         <div className="mb-3 submit">
-          <button disabled={isInvalid} type="submit" onClick={onSubmit} className="btn btn-primary submit-btn">SUBMIT</button>
+          <button disabled={isInvalid} type="submit" className="btn btn-primary submit-btn">SUBMIT</button>
         </div>
       </form>
       {/* {sent && (
