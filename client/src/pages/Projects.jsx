@@ -12,7 +12,7 @@ export default function Projects() {
       id: 1,
       title: "Goal Tracker",
       description:
-        "MERN stack application to help users keep track of their goals",
+        "MERN stack application to help users keep track of their goals.",
       link: "https://github.com/abundanceesim/goal-tracker",
       shortTitle: "goal-tracker",
       screenshot: goalTracker,
@@ -59,7 +59,7 @@ export default function Projects() {
       id: 4,
       title: "Potato Inventory App",
       description:
-        "Console-based inventory application for the manipulation of records from dataset about potatoes",
+        "Console-based inventory application for the manipulation of records from dataset published by Statistics Canada.",
       link: "https://github.com/abundanceesim/potato-inventory-app",
       shortTitle: "potato-inventory",
       screenshot: potatoInventory,
