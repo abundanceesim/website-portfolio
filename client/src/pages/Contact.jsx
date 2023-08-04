@@ -1,10 +1,10 @@
 import { useState } from "react"
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
-  //add form validation
-  // make submit button disabled till validation requirements 
-  // are met.
+  
   const msgHolder = 'It\'s really cool :)'
   const nameHolder = 'The Rock'
   const emailHolder = 'rocky@gmail.com'
@@ -20,9 +20,22 @@ export default function Contact() {
   let isEmailValid = regex.test(email)
 
 
-  let isInvalid = (!name || !isEmailValid || !subject || !message)
+  let isInvalid = !name || !isEmailValid || !subject || !message;
 
-   const sendEmail = (e) => {
+  const notify = () => {
+    toast.success("Thanks for your message!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  }
+
+  const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
@@ -35,23 +48,13 @@ export default function Contact() {
           console.log(error.text);
         }
       );
-      e.target.reset()
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+    e.target.reset();
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
   };
 
-  // const onSubmit = (e) => {
-  //   e.preventDefault()
-  //   setName('')
-  //   setEmail('')
-  //   setSubject('')
-  //   setMessage('');
-  //   // return true
-  // }
-
-  // let sent = onSubmit;
 
   return (
     <>
@@ -85,12 +88,21 @@ export default function Contact() {
            value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
         <div className="mb-3 submit">
-          <button disabled={isInvalid} type="submit" className="btn btn-primary submit-btn">SUBMIT</button>
+          <button disabled={isInvalid} type="submit" onClick={notify} className="btn btn-primary submit-btn">SUBMIT</button>
         </div>
       </form>
-      {/* {sent && (
-        <h2>Thanks for your message!</h2>
-      )} */}
+      <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="colored"
+      />
     </>
   )
 }
