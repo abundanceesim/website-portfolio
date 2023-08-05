@@ -16,16 +16,20 @@ body {
 }
 
 /*------Page Not Found-----------------*/
-.not-found-error {
-  text-align: center;
+.page-not-found {
+  padding: 20px;
+  /* width: 80%; */
+  margin: 0 auto ;
+  min-width: fit-content;
 }
 
-.not-found  {
-  width: 50%;
+.not-found img{
+  min-width: min-content;
+  padding: auto;
 }
 
 .back-to-home {
-  text-align: center;
+  padding: 10px;
 }
 
 /*--------------Header-------------------*/
@@ -268,7 +272,7 @@ li a{
 }
 
 .github-btn {
-  padding: 14px;
+  padding: 14px 5px;
   text-align: right;
 }
 

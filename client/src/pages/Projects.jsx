@@ -4,6 +4,7 @@ import goalTracker from '../assets/project-imgs/goal-tracker.png'
 import projManagement from '../assets/project-imgs/project-management.png'
 import potatoInventory from '../assets/project-imgs/potato-inventory.png'
 import productsApp from '../assets/project-imgs/products-app.png'
+import todoApp from '../assets/project-imgs/todo-app.png'
 
 export default function Projects() {
 
@@ -65,6 +66,16 @@ export default function Projects() {
       screenshot: potatoInventory,
       technologies: ["python", "pytest"],
     },
+    {
+      id: 5,
+      title: "To Do App",
+      description:
+        "Basic todo app made for the purpose of learning the basics of React.js",
+      link: "https://github.com/abundanceesim/todo-app",
+      shortTitle: "todo-app",
+      screenshot: todoApp,
+      technologies: ["react"],
+    },
   ];
 
 
@@ -74,7 +85,7 @@ export default function Projects() {
         <div className='container projects'>
           <div className="row">
             {projects.map((project) => (
-              <div className="col mb-5">
+              <div className="col mb-5" style={{maxWidth:"min-content"}}>
                 <ProjectItem project={project} key={project}/>
               </div>
             ))}
