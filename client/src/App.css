@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 body {
   background-color: #03032b;
@@ -217,6 +218,38 @@ li a{
   height: fit-content;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.075);
+}
+
+/*---------About page----------------------*/
+.about-page {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.profile-picture {
+  border-radius: 20px;
+  /* width: 70%; */
+  /* height: 70%; */
+}
+
+.image-container {
+  width: 50%;
+  /* Adjust the width as needed */
+  float: left;
+  /* Float the image to the left */
+  margin: 0 10px 10px 0;
+  /* Add margin for spacing */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container p {
+  margin: 0;
+  /* Reset margin to avoid extra space */
 }
 
 /*---------Projects page----------------------*/
