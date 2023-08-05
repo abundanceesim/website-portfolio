@@ -1,6 +1,6 @@
 import error404 from '../assets/error404.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
-/*Image from: https://www.pngegg.com/en/png-ebvdc/download */
+/*Image downloaded from: https://www.pngegg.com/ */
 
 export default function NotFound() {
   return (
