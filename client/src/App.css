@@ -6,7 +6,14 @@ body {
   /* background-image: linear-gradient( #03032b, #0d083d); */
   height: 100%;
   color: white;
+  /*little fade in animation*/
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
+
+
 
 .main {
   width: 57%;
@@ -160,6 +167,9 @@ li a{
   width: 47%;
   min-width: fit-content;
   margin: 0 auto;
+  animation-duration: 0.3s;
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.53, .82, .92, 1.2);
 }
 
 .name-and-email {
@@ -177,8 +187,11 @@ li a{
 
 .submit-btn {
   background-color: rgb(236, 66, 137) !important;
-  border-color: rgb(236, 66, 137) !important;;
+  border-color: rgb(236, 66, 137) !important;
   width: 50%;
+  animation-duration: 0.45s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.34, .53, .74, 1.2);
 }
 
 .submit-btn:hover {
@@ -203,6 +216,10 @@ li a{
   -o-transition: all .2s ease;
   transition: all .2s ease;
   vertical-align: middle;
+
+  animation-duration: 0.4s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.26, .53, .74, 1.1);
 }
 
 .artwork:hover {
@@ -216,6 +233,7 @@ li a{
 .art-page {
   padding: 15px;
   margin: 0 auto;
+  margin-top: 30px;
   text-align: center;
   /* width: 100%; */
   width: fit-content;
@@ -261,6 +279,7 @@ li a{
   padding-top: 30px;
   width: 92%;
   margin: 0 auto;
+  margin-top: 20px;
   min-width: min-content;
 }
 
@@ -269,11 +288,20 @@ li a{
   height: 300px;
   margin-bottom: 10px;
   border-radius: 14px;
+  animation-duration: 0.4s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.45, .63, .84, 1.2);
 }
+
 
 .github-btn {
   padding: 14px 5px;
   text-align: right;
+  animation-duration: 0.2s;
+    animation-name: animate-fade;
+    animation-fill-mode: backwards;
+    animation-name: animate-pop;
+    animation-duration: 0.3s
 }
 
 .github-source-btn {
@@ -301,6 +329,31 @@ li a{
   padding: 10px;
   color: rgb(191, 191, 252);
 }
+
+/*----------Animations----------------*/
+@keyframes animate-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 
 /* .footer {
   position: fixed;
