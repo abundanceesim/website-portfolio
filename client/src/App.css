@@ -207,6 +207,7 @@ li a{
 }
 
 .artwork {
+  cursor: pointer;
   width: 335px;
   height: 335px;
   border-radius: 20px;
@@ -284,6 +285,7 @@ li a{
 }
 
 .project-container img {
+  cursor: pointer;
   width: 460px;
   height: 300px;
   margin-bottom: 10px;
