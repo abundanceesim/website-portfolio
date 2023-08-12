@@ -8,7 +8,7 @@ export default function Projects() {
     <>
       {projects.length > 0 ? (
         <div className='container projects'>
-          <div className="row">
+          <div className="row project-row">
             {projects.map((project) => (
               <div className="col mb-5" style={{maxWidth:"min-content"}}>
                 <ProjectItem project={project} key={project}/>

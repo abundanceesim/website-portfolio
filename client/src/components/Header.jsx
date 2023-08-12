@@ -5,36 +5,27 @@ export default function Header() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo">
-          <NavLink exact to="/"> AE </NavLink>
+          <NavLink exact to="/">
+            {" "}
+            AE{" "}
+          </NavLink>
         </div>
         <ul className="nav-menu">
-          <li className="nav-item">
-            <div className="nav-div-item">
-              <NavLink exact to="/" activeClassName="active">
-                Home
-              </NavLink>
-            </div>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/about" activeClassName="active">
-              About
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/projects" activeClassName="active">
-              Projects
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/artworks" activeClassName="active">
-              Art
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/contact" activeClassName="active">
-              Contact
-            </NavLink>
-          </li>
+          <NavLink exact to="/" activeClassName="active">
+            <li className="nav-item">Home</li>
+          </NavLink>
+          <NavLink exact to="/about" activeClassName="active">
+            <li className="nav-item">About</li>
+          </NavLink>
+          <NavLink exact to="/projects" activeClassName="active">
+            <li className="nav-item">Projects</li>
+          </NavLink>
+          <NavLink exact to="/artworks" activeClassName="active">
+            <li className="nav-item">Art</li>
+          </NavLink>
+          <NavLink exact to="/contact" activeClassName="active">
+            <li className="nav-item">Contact</li>
+          </NavLink>
         </ul>
       </div>
     </nav>

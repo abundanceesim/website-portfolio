@@ -52,9 +52,13 @@ a.redirect-to-home:hover {
   text-decoration: none !important;
 }
 
-.active {
+ul.nav-menu > a.active {
   /* color: rgb(159, 159, 255); */
   color: rgb(236, 66, 137);
+  /* text-decoration: underline !important;
+  text-decoration-color: rgb(236, 66, 137);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px; */
 }
 
 
@@ -64,14 +68,20 @@ ul {
   margin: 0 auto;
 }
 
-li a{
+/* Target children of .nav-menu ul */
+ul.nav-menu > a {
   color: rgb(235, 235, 250);
-  list-style: none;
   text-decoration: none !important;
 }
 
+/* li a{
+  color: rgb(235, 235, 250);
+  list-style: none;
+  text-decoration: none !important;
+} */
+
 .navbar {
-  color: #fff;
+  color: #fff !important;
   padding: 20px 20px;
 }
 
@@ -83,7 +93,7 @@ li a{
 }
 
 .nav-logo {
-  padding: 10px;
+  padding: 10px 12px;
 }
 
 .nav-logo a{
@@ -252,6 +262,11 @@ li a{
 
 .profile-picture {
   border-radius: 20px;
+  animation-duration: 0.2s;
+    animation-name: animate-fade;
+    animation-fill-mode: backwards;
+    animation-name: animate-pop;
+    animation-duration: 0.3s
   /* width: 70%; */
   /* height: 70%; */
 }
@@ -282,6 +297,10 @@ li a{
   margin: 0 auto;
   margin-top: 20px;
   min-width: min-content;
+}
+
+.project-row {
+  margin: 0 auto;
 }
 
 .project-container img {
