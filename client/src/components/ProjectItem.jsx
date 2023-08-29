@@ -8,8 +8,8 @@ function ProjectItem({project}) {
           <img src={project.screenshot} alt={project.shortTitle + "-img"} />
         </div>
       </div>
-      <div className="project-description">
-        <h5>{project.title}</h5>
+      <div className="project-details">
+        <h5 className='project-title'>{project.title}</h5>
         {project.description}
       </div>
       <div className='github-btn'>

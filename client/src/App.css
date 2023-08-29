@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 body {
-  background-color: #03032b;
+  background-color: #06022e;
   /* background-image: linear-gradient( #03032b, #0d083d); */
   height: 100%;
   color: white;
@@ -12,7 +12,6 @@ body {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
-
 
 
 .main {
@@ -61,8 +60,6 @@ ul.nav-menu > a.active {
   text-underline-offset: 8px; */
 }
 
-
-
 ul {
   list-style: none;
   margin: 0 auto;
@@ -70,7 +67,7 @@ ul {
 
 /* Target children of .nav-menu ul */
 ul.nav-menu > a {
-  color: rgb(235, 235, 250);
+  color: rgba(235, 235, 250, 0.856);
   text-decoration: none !important;
 }
 
@@ -82,7 +79,7 @@ ul.nav-menu > a {
 
 .navbar {
   color: #fff !important;
-  padding: 20px 20px;
+  padding: 30px 20px;
 }
 
 .nav-container {
@@ -94,6 +91,8 @@ ul.nav-menu > a {
 
 .nav-logo {
   padding: 10px 12px;
+  animation-duration: 1.3s;
+  animation-name: animate-fade;
 }
 
 .nav-logo a{
@@ -110,7 +109,10 @@ ul.nav-menu > a {
   display: block;
   margin-left: 35%;
   width: 50%;
+  animation-duration: 0.6s;
+  animation-name: animate-stretch;
 }
+
 
 .nav-logo:hover {
   border-radius: 100%;
@@ -132,11 +134,14 @@ ul.nav-menu > a {
 }
 
 .nav-item:hover {
-  text-decoration: underline;
-  /* text-decoration-color: rgb(243, 74, 74); */
+  color: white;
+  text-decoration-line: underline;
   text-decoration-color: rgb(236, 66, 137);
   text-decoration-thickness: 4px;
-  text-underline-offset: 8px;
+  text-underline-offset: 10.5px;
+  animation-name: animate-underline;
+  animation-duration: 152ms;
+  /* transition: text-decoration-thickness 200ms, text-decoration-color 500ms; */
 }
 
 .main-content {
@@ -162,7 +167,7 @@ ul.nav-menu > a {
 }
 
 .message {
-  height: 220px;
+  height: 300px;
 }
 
 .contact-heading {
@@ -303,6 +308,19 @@ ul.nav-menu > a {
   margin: 0 auto;
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+ */
+ /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
+.project-title {
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Urbanist', sans-serif; */
+  /* font-family: 'Shippori Mincho', serif; */
+  font-family: 'Neuton', serif;
+}
+
 .project-container img {
   cursor: pointer;
   width: 460px;
@@ -374,6 +392,29 @@ ul.nav-menu > a {
   }
 }
 
+@keyframes animate-stretch {
+  0% {
+    width: 0%;
+  }
+
+  45% {
+    width: 22%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes animate-underline {
+  0% {
+    text-decoration-thickness: 0px
+  }
+
+  100% {
+    text-decoration-thickness: 4px;
+  }
+}
 
 
 /* .footer {
