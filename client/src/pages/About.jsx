@@ -4,7 +4,7 @@ import me from '../assets/personal/me.png'
 export default function About() {
   return (
     <>
-      <div className="about-page">
+      <div className="container">
         <div className="row">
           <div className=" col profile-img">
             <img className="profile-picture" src={me} alt="abundance-esim" />

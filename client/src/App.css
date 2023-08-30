@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+html {
+  overflow-y: scroll;
+}
+
+@supports (scrollbar-gutter: stable) {
+  html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}
+
 body {
   background-color: #06022e;
   /* background-image: linear-gradient( #03032b, #0d083d); */
@@ -12,7 +23,6 @@ body {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
-
 
 .main {
   width: 57%;
@@ -83,7 +93,8 @@ ul.nav-menu > a {
 }
 
 .nav-container {
-  width: 100%;
+  /* width: 100%; */
+  width: 94%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -223,8 +234,10 @@ ul.nav-menu > a {
 
 .artwork {
   cursor: pointer;
-  width: 335px;
-  height: 335px;
+  /* width: 335px; */
+  /* height: 335px; */
+  width: 20.8rem;
+  height: 20.8rem;
   border-radius: 20px;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -233,7 +246,7 @@ ul.nav-menu > a {
   transition: all .2s ease;
   vertical-align: middle;
 
-  animation-duration: 0.4s;
+  animation-duration: 0.3s;
   animation-name: animate-pop;
   animation-timing-function: cubic-bezier(.26, .53, .74, 1.1);
 }
@@ -252,10 +265,12 @@ ul.nav-menu > a {
   margin-top: 30px;
   text-align: center;
   /* width: 100%; */
-  width: fit-content;
-  height: fit-content;
+  /* width: fit-content;
+  height: fit-content; */
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.075);
+  /* animation-name: animate-open-scroll; */
+  animation-duration: 5s;
 }
 
 /*---------About page----------------------*/
@@ -271,9 +286,9 @@ ul.nav-menu > a {
     animation-name: animate-fade;
     animation-fill-mode: backwards;
     animation-name: animate-pop;
-    animation-duration: 0.3s
-  /* width: 70%; */
-  /* height: 70%; */
+    animation-duration: 0.3s;
+   width: 100%;
+  /* height: 70%;  */
 }
 
 .image-container {
@@ -413,6 +428,16 @@ ul.nav-menu > a {
 
   100% {
     text-decoration-thickness: 4px;
+  }
+}
+
+@keyframes animate-open-scroll {
+  0% {
+    height: 0%;
+  }
+
+  100% {
+    height: fit-content;
   }
 }
 
