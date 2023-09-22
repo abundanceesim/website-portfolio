@@ -65,7 +65,7 @@ export default function Contact() {
           <div className="mb-3 name">
             <label htmlFor="name" className="form-label">Name</label>
             <input type="text" className="form-control" name="name"
-              aria-describedby="emailHelp" placeholder={nameHolder}
+              aria-describedby="nameHelp" placeholder={nameHolder}
               value={name} onChange={(e) => setName(e.target.value)}/>
           </div>
           <div className="mb-3 email">
@@ -78,13 +78,13 @@ export default function Contact() {
         <div className="mb-3">
           <label htmlFor="subject" className="form-label">Subject</label>
           <input type="text" className="form-control" name="subject"
-           aria-describedby="emailHelp" placeholder={subjectHolder}
+           aria-describedby="subjectHelp" placeholder={subjectHolder}
            value={subject} onChange={(e) => setSubject(e.target.value)}/>
         </div>
         <div className="mb-3">
           <label htmlFor="message" className="form-label">Message</label>
           <textarea type="text" className="form-control message"
-           name="message" aria-describedby="emailHelp" placeholder={msgHolder}
+           name="message" aria-describedby="messageHelp" placeholder={msgHolder}
            value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
         <div className="mb-3 submit">
