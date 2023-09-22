@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Neuton&display=swap');
+
 
 html {
   overflow-y: scroll;
@@ -13,8 +15,9 @@ html {
 }
 
 body {
-  background-color: #06022e;
-  /* background-image: linear-gradient( #03032b, #0d083d); */
+  background-color: #03011b;
+  /* background-color: #06022e; */
+  /* background-image: linear-gradient( #010124, #04012c); */
   height: 100%;
   color: white;
   /*little fade in animation*/
@@ -22,6 +25,7 @@ body {
   animation-name: animate-fade;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
+  /* font-family: 'Instrument Sans'; */
 }
 
 .main {
@@ -29,6 +33,10 @@ body {
   height: 100vh;
   margin: 0 auto;
   min-width: min-content;
+}
+
+.btn {
+  font-family: 'Instrument Sans';
 }
 
 /*------Page Not Found-----------------*/
@@ -63,9 +71,9 @@ a.redirect-to-home:hover {
 
 ul.nav-menu > a.active {
   /* color: rgb(159, 159, 255); */
-  color: rgb(236, 66, 137);
+  color:rgb(171, 231, 52);
   /* text-decoration: underline !important;
-  text-decoration-color: rgb(236, 66, 137);
+  text-decoration-color:rgb(171, 231, 52);
   text-decoration-thickness: 4px;
   text-underline-offset: 8px; */
 }
@@ -90,6 +98,7 @@ ul.nav-menu > a {
 .navbar {
   color: #fff !important;
   padding: 30px 20px;
+  font-family: 'Instrument Sans';
 }
 
 .nav-container {
@@ -115,7 +124,7 @@ ul.nav-menu > a {
 
 /*partial border after the logo*/
 .nav-logo:after {
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid rgb(171, 231, 52);
   content: '';
   display: block;
   margin-left: 35%;
@@ -129,6 +138,10 @@ ul.nav-menu > a {
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.13);
   border: none;
+}
+
+.nav-logo a:hover {
+  color: rgb(171, 231, 52) !important;
 }
 
 .nav-menu {
@@ -147,7 +160,7 @@ ul.nav-menu > a {
 .nav-item:hover {
   color: white;
   text-decoration-line: underline;
-  text-decoration-color: rgb(236, 66, 137);
+  text-decoration-color:rgb(171, 231, 52);
   text-decoration-thickness: 4px;
   text-underline-offset: 10.5px;
   animation-name: animate-underline;
@@ -212,8 +225,8 @@ ul.nav-menu > a {
 }
 
 .submit-btn {
-  background-color: rgb(236, 66, 137) !important;
-  border-color: rgb(236, 66, 137) !important;
+  background-color: rgb(171, 231, 52) !important;
+  border-color: rgb(171, 231, 52) !important;
   width: 50%;
   animation-duration: 0.45s;
   animation-name: animate-pop;
@@ -222,7 +235,7 @@ ul.nav-menu > a {
 
 .submit-btn:hover {
   background-color: transparent !important;
-  color: rgb(236, 66, 137) !important;
+  color: rgb(171, 231, 52) !important;
 }
 
 /*-----------------Art page-----------------------*/
@@ -313,7 +326,7 @@ ul.nav-menu > a {
 /*---------Projects page----------------------*/
 .projects {
   padding-top: 30px;
-  width: 92%;
+  width: 94%;
   margin: 0 auto;
   margin-top: 20px;
   min-width: min-content;
@@ -321,6 +334,12 @@ ul.nav-menu > a {
 
 .project-row {
   margin: 0 auto;
+}
+
+.project-card {
+  padding-top: 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.075);
 }
 
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
@@ -333,7 +352,9 @@ ul.nav-menu > a {
   /* font-family: 'Playfair Display', serif; */
   /* font-family: 'Urbanist', sans-serif; */
   /* font-family: 'Shippori Mincho', serif; */
-  font-family: 'Neuton', serif;
+  color: rgb(171, 231, 52);
+  /* font-size: 22px; */
+  font-family: 'Instrument Sans', serif;
 }
 
 .project-container img {
@@ -360,14 +381,15 @@ ul.nav-menu > a {
 
 .github-source-btn {
   width: 26%;
-  border-color: rgb(236, 66, 137) !important;
+  /* yellowgreen used previously */
+  border-color: rgb(171, 231, 52) !important;
   background-color: transparent !important;
-  color: rgb(236, 66, 137) !important;
+  color: rgb(171, 231, 52) !important;
 }
 
 .github-source-btn:hover {
-  background-color: rgb(236, 66, 137) !important;
-  border-color: rgb(236, 66, 137) !important;
+  background-color: rgb(171, 231, 52) !important;
+  border-color: rgb(171, 231, 52) !important;
   color: white !important;
 }
 

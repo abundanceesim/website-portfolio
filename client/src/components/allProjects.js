@@ -5,8 +5,27 @@ import productsApp from "../assets/project-imgs/products-app.png";
 import todoApp from "../assets/project-imgs/todo-app.png";
 
 const projects = [
+  
   {
     id: 1,
+    title: "Manage.it",
+    description: "Project management app made with React, GraphQL and Apollo.",
+    link: "https://github.com/abundanceesim/project-management-app",
+    shortTitle: "project-management",
+    screenshot: projManagement,
+    technologies: [
+      "react",
+      "express",
+      "node",
+      "mongodb",
+      "express",
+      "graphql",
+      "apollo",
+      "javascript",
+    ],
+  },
+  {
+    id: 2,
     title: "Goal Tracker",
     description:
       "MERN stack application to help users keep track of their goals.",
@@ -20,24 +39,6 @@ const projects = [
       "mongodb",
       "express",
       "redux toolkit",
-      "javascript",
-    ],
-  },
-  {
-    id: 2,
-    title: "Project Management App",
-    description: "Project management app made with React, GraphQL and Apollo.",
-    link: "https://github.com/abundanceesim/project-management-app",
-    shortTitle: "project-management",
-    screenshot: projManagement,
-    technologies: [
-      "react",
-      "express",
-      "node",
-      "mongodb",
-      "express",
-      "graphql",
-      "apollo",
       "javascript",
     ],
   },
