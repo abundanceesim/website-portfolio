@@ -1,5 +1,5 @@
 import React from 'react'
-import me from '../assets/personal/me.png'
+import me from '../assets/personal/abundance_transparent_bg.png'
 
 export default function About() {
   return (

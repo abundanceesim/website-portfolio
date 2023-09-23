@@ -7,7 +7,7 @@ export default function Header() {
         <div className="nav-logo">
           <NavLink exact to="/">
             {" "}
-            AE{" "}
+            AE.{" "}
           </NavLink>
         </div>
         <ul className="nav-menu">

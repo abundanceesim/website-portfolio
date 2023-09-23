@@ -120,7 +120,7 @@ ul.nav-menu > a {
 }
 
 .nav-logo a{
-  font-size: 24px;
+  font-size: 28px;
   font-family: 'Philosopher', Times, serif;
   text-decoration: none;
   color: rgb(235, 235, 250);
@@ -353,19 +353,13 @@ ul.nav-menu > a {
   /* border: solid 1px rgb(171, 231, 52); */
   /* background: rgba(236, 236, 253, 0.199); */
   background: rgba(255, 255, 255, 0.116);
+  transition-delay: 50ms;
+  transition-timing-function: ease-in;
+  transition-property: box-shadow;
   box-shadow: 0px 0px 4px 2px rgb(171, 231, 52);
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
- */
- /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@600&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap');  */
-@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
-
 .project-title {
-  /* font-family: 'Playfair Display', serif; */
-  /* font-family: 'Urbanist', sans-serif; */
-  /* font-family: 'Shippori Mincho', serif; */
   color: rgb(171, 231, 52);
   /* font-size: 22px; */
   font-family: 'Instrument Sans', serif;
