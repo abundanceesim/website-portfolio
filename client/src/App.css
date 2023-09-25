@@ -294,6 +294,11 @@ ul.nav-menu > a {
 .art-container {}
 
 /*---------About page----------------------*/
+.about-txt {
+  font-family: 'Instrument Sans';
+  font-size: x-large;
+}
+
 .about-page {
   width: 70%;
   margin: 0 auto;
