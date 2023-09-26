@@ -47,13 +47,22 @@ body {
   min-width: fit-content;
 }
 
-.not-found img{
-  min-width: min-content;
-  padding: auto;
+.not-found-img {
+  margin: 0 auto;
+  width: 85%;
 }
 
-.back-to-home {
-  padding: 10px;
+.back-to-home > .btn{
+  color: rgb(171, 231, 52) !important;
+  background-color: none;
+  border: solid 1px rgb(171, 231, 52) !important;
+  padding: 12px;
+}
+
+.back-to-home > .btn:hover {
+  background-color: rgb(171, 231, 52) !important;
+  border: solid 1px rgb(171, 231, 52) !important;
+  color: white !important;
 }
 
 /*--------------Header-------------------*/

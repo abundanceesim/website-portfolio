@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   
-  const msgHolder = 'It\'s really cool :)'
+  const msgHolder = 'Lorem ipsum?'
   const nameHolder = 'The Rock'
   const emailHolder = 'rocky@gmail.com'
   const subjectHolder = 'Love your page!'

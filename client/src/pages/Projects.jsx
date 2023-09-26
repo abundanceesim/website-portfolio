@@ -12,6 +12,7 @@ export default function Projects() {
             {projects.map((project) => (
               <div className="col mb-4 project-card" style={{maxWidth:"min-content"}}>
                 <ProjectItem project={project} key={project}/>
+                {/* {console.log(project.title)} */}
               </div>
             ))}
           </div>
