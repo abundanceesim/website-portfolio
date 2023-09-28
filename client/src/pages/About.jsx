@@ -6,9 +6,6 @@ export default function About() {
     <>
       <div className="container">
         <div className="row">
-          <div className=" col profile-img">
-            <img className="profile-picture" src={me} alt="abundance-esim" />
-          </div>
           <div className="col">
             <div className="about-txt about-txt-primary">
               Hi, I'm Abundance Esim, a software developer and recent Computer
@@ -17,6 +14,9 @@ export default function About() {
               JavaScript, Angular and React. Asides from these, I'm proficient
               in Java.
             </div>
+          </div>
+          <div className="col profile-img">
+            <img className="profile-picture" src={me} alt="abundance-esim" />
           </div>
         </div>
         <div className="about-txt about-txt-secondary">

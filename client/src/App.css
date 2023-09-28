@@ -112,6 +112,7 @@ ul.nav-menu > a {
   background-color: #03011b;
   position: sticky;
   top: 0;
+  height: 7.5rem;
 }
 
 .nav-container {
@@ -186,6 +187,85 @@ ul.nav-menu > a {
   padding: 2px;
 }
 
+/*----------------Home Page---------------------*/
+#intro {
+  height: calc(100vh - 7.5rem);
+  width: 100vw;
+  max-width: 65rem;
+  margin: 0 auto ;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  top: -3.5rem;
+  /* top: 2rem; */
+  right: -2rem;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+  animation-duration: 0.2s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
+  animation-name: animate-pop;
+  animation-duration: 0.3s;
+
+}
+
+.introContent {
+  font-family: 'Instrument Sans', serif;
+  height: 100vh;
+  width: 100vw;
+  /* width: 75vw; */
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25vh;
+  /* justify-content: center; */
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+.introName {
+  color: rgb(171, 231, 52);
+}
+
+.introPara {
+  /* max-width: 60vw; */
+  width: 35vw;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    margin-left: -1rem;
+  }
+
+  .introPara {
+    width: 70vw;
+  }
+}
+
+.connect-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: large;
+  animation-duration: 0.7s;
+  animation-name: animate-pop;
+}
+
+.introContent > span, .introPara {
+  animation-duration: 0.4s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.53, .82, .92, 1.2);
+}
 /*----------------Contact Page---------------------*/
 .form-control {
   border-radius: 11px;

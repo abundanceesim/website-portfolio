@@ -4,11 +4,31 @@ import Artwork from "../components/Artwork";
 import artworks from "../components/allArtworks";
 import Projects from "./Projects";
 import Artworks from "./Artworks";
+// import me from '../assets/personal/abundance_transparent_bg.png'
+import me from "../assets/personal/abundance-snow.png";
+// import me from "../assets/personal/abundance-boba.png";
+
 
 export default function Home() {
   return (
-    <>
-      <div className="container">
+    <section id="intro">
+      <div className="introContent">
+        <span className="hello">Hello, </span>
+        <span className="introText">
+          I'm <span className="introName">Abundance</span>. <br /> Software Developer
+        </span>
+        <p className="introPara">
+          I am a skilled full-stack developer with experience creating visually
+          appealing and user friendly web applications
+        </p>
+          <a
+            className="mt-3 btn btn-outline-primary github-source-btn connect-btn"
+            style={{ width: "fit-content" }}
+            href="/contact"
+          >SAY HI!</a>
+        <img className="bg" src={me} alt="abundance-esim" />
+      </div>
+      {/* <div className="container">
         <div className="intro">
           <div>Hi there, I'm Abundance</div>
           <div>Software developer by day, artist by night</div>
@@ -19,17 +39,15 @@ export default function Home() {
         </div>
         <div className="recent-projects">
           Recent Projects
-          {/* <div className="container projects"> */}
-          <div className="row">
+          <div className="row gap-4">
             {projects
               .filter((item, idx) => idx < 2)
               .map((project) => (
-                <div className="col mb-5" style={{ maxWidth: "min-content" }}>
+                <div className="col mb-4 project-card" style={{ maxWidth: "min-content" }}>
                   <ProjectItem project={project} key={project} />
                 </div>
               ))}
           </div>
-          {/* </div> */}
         </div>
         <div className="recent-artworks">
           <div className="row mt-4">
@@ -42,7 +60,7 @@ export default function Home() {
               ))}
           </div>
         </div>
-      </div>
-    </>
+      </div> */}
+    </section>
   );
 }
