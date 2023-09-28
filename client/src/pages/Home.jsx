@@ -24,7 +24,7 @@ export default function Home() {
           appealing and user friendly web applications.
         </p>
         <a
-          className="mt-3 btn btn-outline-primary github-source-btn connect-btn"
+          className="mt-2 btn btn-outline-primary github-source-btn connect-btn"
           style={{ width: "fit-content" }}
           href="/contact"
         >

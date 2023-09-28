@@ -191,7 +191,7 @@ ul.nav-menu > a {
 #intro {
   height: calc(100vh - 7.5rem);
   width: 100vw;
-  max-width: 69rem;
+  max-width: 68rem;
   margin: 0 auto ;
   overflow: hidden;
   /* overflow-y: hidden; */
@@ -418,6 +418,10 @@ ul.nav-menu > a {
   .introPara {
     width: 55vw;
     font-size: 1.2rem;
+  }
+
+  .introContent {
+    padding-top: 22vh;
   }
 
   .connect-btn {
