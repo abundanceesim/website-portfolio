@@ -25,7 +25,7 @@ body {
   animation-name: animate-fade;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
-  /* font-family: 'Instrument Sans'; */
+  font-family: 'Instrument Sans';
 }
 
 .main {
@@ -583,14 +583,12 @@ ul.nav-menu > a {
   color: white !important;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px), (min-width: 940px){
   .project-row {
     justify-content: center;
   }
-}
-/* .project-img {
-  width: 80%;
-} */
+} 
+
 /*------------Footer-----------------*/
 .footer {
   position: absolute;
