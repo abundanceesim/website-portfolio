@@ -238,8 +238,8 @@ ul.nav-menu > a {
 
 .introPara {
   /* max-width: 60vw; */
-  width: 35vw;
-  font-size: 1rem;
+  width: 34vw;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -260,7 +260,8 @@ ul.nav-menu > a {
 .connect-btn {
   padding-left: 20px;
   padding-right: 20px;
-  font-size: large;
+  font-size: 1.35rem;
+  font-weight: 600;
   animation-duration: 0.7s;
   animation-name: animate-pop;
 }
@@ -325,10 +326,13 @@ ul.nav-menu > a {
 .submit-btn {
   background-color: rgb(171, 231, 52) !important;
   border-color: rgb(171, 231, 52) !important;
-  width: 50%;
+  width: 30%;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   animation-duration: 0.45s;
   animation-name: animate-pop;
   animation-timing-function: cubic-bezier(.34, .53, .74, 1.2);
+  font-size: 1.2rem;
 }
 
 .submit-btn:hover {
@@ -384,13 +388,61 @@ ul.nav-menu > a {
   animation-duration: 5s;
 }
 
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 80vw;
+  }
+  
+  .introPara {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    width: 80vw;
+    font-size: 1.15rem;
+  }
+
+  .submit-btn {
+    font-size: larger;
+  }
+
+  input::placeholder{
+    font-size: 1.15rem;
+  }
+
+  /* .navbar {
+    font-size: large;
+  } */
+
+  textarea::placeholder { 
+    font-size: 1.15rem;
+  }
+
+  .connect-btn {
+    font-size: 1.4rem;
+  }
+
+  .contact-heading > h1 {
+    font-size: xx-large;
+  }
+
+  .artwork {
+    width: 72vw;
+    height: 72vw;
+  }
+
+  .art-page {
+    width: 80vw;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width:992px) {
   .main {
     width: 100vw;
   }
   .artwork {
-    width: 30vw;
-    height: 30vw;
+    width: 45vw;
+    height: 45vw;
   }
 }
 
@@ -498,11 +550,11 @@ ul.nav-menu > a {
 .github-btn {
   padding: 14px 5px;
   text-align: right;
-  animation-duration: 0.2s;
+  animation-duration: 0.7s;
     animation-name: animate-fade;
     animation-fill-mode: backwards;
-    animation-name: animate-pop;
-    animation-duration: 0.3s
+    /* animation-name: animate-pop;
+    animation-duration: 0.3s */
 }
 
 .github-source-btn {

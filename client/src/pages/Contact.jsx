@@ -87,7 +87,7 @@ export default function Contact() {
            name="message" aria-describedby="messageHelp" placeholder={msgHolder}
            value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
-        <div className="mb-3 submit">
+        <div className="mt-4 mb-3 submit">
           <button disabled={isInvalid} type="submit" onClick={notify} className="btn btn-primary submit-btn">SUBMIT</button>
         </div>
       </form>

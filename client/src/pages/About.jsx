@@ -15,9 +15,7 @@ export default function About() {
               in Java.
             </div>
           </div>
-          <div className="col profile-img">
-            <img className="profile-picture" src={me} alt="abundance-esim" />
-          </div>
+          
         </div>
         <div className="about-txt about-txt-secondary">
           When I'm not immersed in lines of code, you'll likely find me
