@@ -9,7 +9,7 @@ export default function About() {
           <div className="col">
             <div className="about-txt about-txt-primary">
               Hi, I'm Abundance Esim, a software developer and recent Computer
-              Programming graduate. I'm Nigerian but reside in Canada. I have
+              Programming graduate. I have
               experience building web applications, particularly using
               JavaScript, Angular and React. Asides from these, I'm proficient
               in Java.

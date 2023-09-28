@@ -403,6 +403,7 @@ ul.nav-menu > a {
   }
 
   .introPara {
+    width: 55vw;
     font-size: 1.2rem;
   }
 
@@ -425,10 +426,6 @@ ul.nav-menu > a {
 
   textarea::placeholder { 
     font-size: 1.15rem;
-  }
-
-  .message {
-
   }
 
   .contact-heading > h1 {
