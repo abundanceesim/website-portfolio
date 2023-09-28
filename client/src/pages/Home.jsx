@@ -25,7 +25,7 @@ export default function Home() {
             className="mt-3 btn btn-outline-primary github-source-btn connect-btn"
             style={{ width: "fit-content" }}
             href="/contact"
-          >SAY HI!</a>
+          >SAY HI</a>
         <img className="bg" src={me} alt="abundance-esim" />
       </div>
       {/* <div className="container">

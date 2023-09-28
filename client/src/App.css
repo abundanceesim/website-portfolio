@@ -130,7 +130,7 @@ ul.nav-menu > a {
 }
 
 .nav-logo a{
-  font-size: 28px;
+  font-size: 2.2rem;
   font-family: 'Philosopher', Times, serif;
   text-decoration: none;
   color: rgb(235, 235, 250);
@@ -194,6 +194,7 @@ ul.nav-menu > a {
   max-width: 65rem;
   margin: 0 auto ;
   overflow: hidden;
+  /* overflow-y: hidden; */
   position: relative;
 }
 
@@ -201,7 +202,7 @@ ul.nav-menu > a {
   position: absolute;
   top: -3.5rem;
   /* top: 2rem; */
-  right: -2rem;
+  right: -2.5rem;
   z-index: -1;
   object-fit: cover;
   height: 100vh;
@@ -290,7 +291,7 @@ ul.nav-menu > a {
 }
 
 .message {
-  height: 300px;
+  height: 350px;
 }
 
 .contact-heading {
@@ -392,9 +393,21 @@ ul.nav-menu > a {
   .main {
     width: 80vw;
   }
+
+  #intro {
+    overflow-x: hidden;
+  }
   
+  .bg {
+    right: -2rem
+  }
+
   .introPara {
     font-size: 1.2rem;
+  }
+
+  .connect-btn {
+    font-size: 1.4rem;
   }
 
   .contact-form {
@@ -410,21 +423,18 @@ ul.nav-menu > a {
     font-size: 1.15rem;
   }
 
-  /* .navbar {
-    font-size: large;
-  } */
-
   textarea::placeholder { 
     font-size: 1.15rem;
   }
 
-  .connect-btn {
-    font-size: 1.4rem;
+  .message {
+
   }
 
   .contact-heading > h1 {
     font-size: xx-large;
   }
+
 
   .artwork {
     width: 72vw;
@@ -434,6 +444,11 @@ ul.nav-menu > a {
   .art-page {
     width: 80vw;
   }
+
+  .not-found-img {
+    margin-top: 15vh;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
