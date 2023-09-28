@@ -251,6 +251,10 @@ ul.nav-menu > a {
   .introPara {
     width: 70vw;
   }
+
+  .bg {
+    height: max-content;
+  }
 }
 
 .connect-btn {
@@ -380,6 +384,26 @@ ul.nav-menu > a {
   animation-duration: 5s;
 }
 
+@media only screen and (min-width: 768px) and (max-width:992px) {
+  .main {
+    width: 100vw;
+  }
+  .artwork {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1440px) {
+  .main {
+      width: 75vw;
+    }
+  .artwork {
+    width: 26vw;
+    height: 26vw;
+  }
+}
+
 .art-container {}
 
 /*---------About page----------------------*/
@@ -495,6 +519,11 @@ ul.nav-menu > a {
   color: white !important;
 }
 
+@media only screen and (min-width: 768px) {
+  .project-row {
+    justify-content: center;
+  }
+}
 /* .project-img {
   width: 80%;
 } */
