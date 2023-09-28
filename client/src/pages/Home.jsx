@@ -21,7 +21,7 @@ export default function Home() {
         </span>
         <p className="introPara">
           I am a skilled full-stack developer with experience creating visually
-          appealing and user friendly web applications
+          appealing and user friendly web applications.
         </p>
         <a
           className="mt-3 btn btn-outline-primary github-source-btn connect-btn"

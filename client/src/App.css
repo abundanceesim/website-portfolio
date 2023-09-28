@@ -191,7 +191,7 @@ ul.nav-menu > a {
 #intro {
   height: calc(100vh - 7.5rem);
   width: 100vw;
-  max-width: 65rem;
+  max-width: 69rem;
   margin: 0 auto ;
   overflow: hidden;
   /* overflow-y: hidden; */
@@ -392,6 +392,19 @@ ul.nav-menu > a {
 @media only screen and (max-width: 768px) {
   .main {
     width: 80vw;
+    /* padding-left: 0.25rem; */
+  }
+
+  .nav-menu {
+    /* overflow-x: hidden;
+    width: 100%; */
+    margin-left: -1.4rem;
+  }
+
+  .nav-container {width: 100%;}
+
+  .nav-logo {
+    margin-left: -0.15rem;
   }
 
   #intro {
@@ -413,7 +426,7 @@ ul.nav-menu > a {
 
   .contact-form {
     width: 80vw;
-    font-size: 1.15rem;
+    font-size: 1.10rem;
   }
 
   .submit-btn {
@@ -421,15 +434,17 @@ ul.nav-menu > a {
   }
 
   input::placeholder{
-    font-size: 1.15rem;
+    font-size: 1.10rem;
   }
 
   textarea::placeholder { 
-    font-size: 1.15rem;
+    font-size: 1.10rem;
   }
 
   .contact-heading > h1 {
-    font-size: xx-large;
+    font-size: 2.2rem;
+    margin-bottom: -0.25rem;
+    font-weight: 600;
   }
 
 
@@ -444,6 +459,10 @@ ul.nav-menu > a {
 
   .not-found-img {
     margin-top: 15vh;
+  }
+
+  .project-card {
+    margin-left: 0.5rem;
   }
 
 }
