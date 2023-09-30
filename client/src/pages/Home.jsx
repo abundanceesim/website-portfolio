@@ -32,10 +32,10 @@ export default function Home() {
         </a>
         <div className="d-flex gap-2 align-items-center">
           <a href="http://www.linkedin.com/in/abundance-esim">
-            <FaLinkedin className="mt-3" style={{ color: "white" }} />
+            <FaLinkedin className="mt-3 home-icon" style={{ color: "white" }} />
           </a>
           <a href="https://github.com/abundanceesim">
-            <FaGithub className="mt-3" style={{ color: "white" }} />
+            <FaGithub className="mt-3 home-icon" style={{ color: "white" }} />
           </a>
         </div>
 

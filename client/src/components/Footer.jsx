@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function Footer() {
-  // return <div className='footer'>© 2023 Abundance Esim</div>;
-  return <footer>© 2023 Abundance Esim</footer>;
+  return (
+    <div className="footer-section">
+      <footer class="footer">© 2023 Abundance Esim</footer>
+    </div>
+  );
 }
