@@ -335,6 +335,7 @@ ul.nav-menu > a {
   animation-duration: 0.3s;
     animation-name: animate-pop;
     animation-timing-function: cubic-bezier(.53, .82, .92, 1.2);
+  font-size: 0.9rem;
 }
 
 .name-and-email {

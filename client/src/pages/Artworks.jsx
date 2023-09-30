@@ -6,7 +6,7 @@ export default function Artworks() {
   return (
     <>
       {artworks.length > 0 ? (
-        <div className="art-page">
+        <div className="art-page mb-3">
           <div className="row mt-4">
             {artworks.map((art) => (
               <div className="col mb-3">
