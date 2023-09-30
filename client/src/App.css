@@ -112,13 +112,13 @@ ul.nav-menu > a {
 
 .navbar {
   color: #fff !important;
-  padding: 25px 20px;
+  padding: 15px 20px;
   font-family: 'Instrument Sans';
   overflow: hidden;
   background-color: #03011b;
   position: sticky;
   top: 0;
-  height: 7.5rem;
+  height: 7rem;
 }
 
 .nav-container {
@@ -192,7 +192,7 @@ ul.nav-menu > a {
 
 /*----------------Home Page---------------------*/
 #intro {
-  height: calc(100vh - 7.5rem);
+  height: calc(100vh - 7rem);
   width: 100vw;
   max-width: 68rem;
   margin: 0 auto ;
