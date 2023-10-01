@@ -114,7 +114,7 @@ ul.nav-menu > a {
   color: #fff !important;
   padding: 15px 20px;
   font-family: 'Instrument Sans';
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #03011b;
   position: sticky;
   top: 0;
@@ -298,6 +298,9 @@ ul.nav-menu > a {
   animation-name: animate-pop;
   animation-timing-function: cubic-bezier(.53, .82, .92, 1.2);
 }
+
+
+
 /*----------------Contact Page---------------------*/
 .form-control {
   border-radius: 11px;
@@ -417,43 +420,49 @@ ul.nav-menu > a {
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100% !important;
+  }
   #page-container {
     width: 80vw;
     /* padding-left: 0.25rem; */
   }
 
+  #content-wrap {
+    width: 100vw;
+  }
+
   .nav-menu {
-    /* overflow-x: hidden;
-    width: 100%; */
-    margin-left: -1.4rem;
+    position: absolute;
+    flex-direction: column;
+    background: black;
+    z-index: 2;
+    top: 5rem;
+    right: 1.4rem;
+    min-width: 15rem;
+    border-radius: 1rem;
   }
 
   .nav-container {width: 100%;}
 
-  .nav-logo {
-    margin-left: -0.15rem;
-  }
+  .nav-logo { margin-left: -0.15rem; }
 
   #intro {
+    width: 100vw;
     overflow-x: hidden;
+    z-index: -2;
   }
   
-  .bg {
-    right: -2rem
-  }
+  .bg { right: -2rem }
 
   .introPara {
     width: 55vw;
     font-size: 1.2rem;
   }
 
-  .introContent {
-    padding-top: 22vh;
-  }
+  .introContent { padding-top: 22vh; }
 
-  .connect-btn {
-    font-size: 1.4rem;
-  }
+  .connect-btn { font-size: 1.4rem; }
 
   .name-and-email, .name, .email {
     display: block;
@@ -472,40 +481,73 @@ ul.nav-menu > a {
     padding: 2px;
   }
 
-  input::placeholder{
-    font-size: 1.10rem;
-  }
-
-  textarea::placeholder { 
-    font-size: 1.10rem;
+  input, textarea::placeholder{
+    font-size: 1rem;
   }
 
   .contact-heading > h1 {
-    font-size: 2.2rem;
-    margin-bottom: -0.25rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: -0.40rem;
+    font-weight: 500;
   }
 
-
   .artwork {
-    width: 72vw;
-    height: 72vw;
+    width: 73vw;
+    height: 73vw;
   }
 
   .art-page {
     border-radius: 25px;
     width: 80vw;
     padding: 0.15rem;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   .not-found-img {
     margin-top: 15vh;
   }
 
-  .project-card {
-    margin-left: 0.5rem;
+  .project-title {
+    font-size: 1.2rem;
   }
 
+  .project-card {
+    width: 90vw;
+    margin-left: 0.5rem;
+    font-size: 0.92rem !important;
+    border-radius: 0.9rem !important;
+  }
+  
+  .project-row {
+    width: 90vw;
+  }
+
+  .project-container img {
+    width: 80vw !important;
+    height: 27vh !important;
+    border-radius: 0.6rem !important;
+  }
+
+  .github-source-btn {padding: 5px !important; font-size: 0.94rem;}
+
+  .contact-form {
+    padding-top: 0px !important;
+    font-size: 1rem;
+  }
+
+  .message {
+    height: 25vh;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobMenu {
+    width: 2rem;
+    display: flex !important;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
