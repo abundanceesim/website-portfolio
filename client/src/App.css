@@ -510,6 +510,8 @@ ul.nav-menu > a {
     width: 35%;
     font-size: 1.25rem;
     padding: 2px;
+    position: relative;
+    z-index: -2;
   }
 
   input, textarea::placeholder{
@@ -544,6 +546,7 @@ ul.nav-menu > a {
   }
 
   .project-card {
+    z-index: -3;
     width: 90vw;
     margin-left: 0.5rem;
     font-size: 0.92rem !important;
@@ -578,6 +581,10 @@ ul.nav-menu > a {
   .mobMenu {
     width: 2rem;
     display: flex !important;
+  }
+
+  .footer-section {
+    z-index: -2;
   }
 }
 
@@ -733,6 +740,7 @@ ul.nav-menu > a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  color: rgba(235, 235, 250, 0.856);
 }
 
 .footer {
