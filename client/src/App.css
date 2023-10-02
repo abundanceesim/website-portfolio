@@ -425,6 +425,7 @@ ul.nav-menu > a {
 @media only screen and (max-width: 768px) {
   .navbar {
     width: 100% !important;
+    z-index: 3;
   }
   #page-container {
     width: 80vw;
@@ -440,19 +441,25 @@ ul.nav-menu > a {
   }
 
   .nav-menu {
+    display: none;
     position: absolute;
     flex-direction: column;
     background: #03011b;
     height: 100vh;
     width: 100vw;
     z-index: 2;
-    top: 5.5rem;
+    top: 6rem;
     right: 0rem;
     text-align: center;
     overflow: hidden;
+    padding-top: 50%;
     /* justify-content: center; */
     /* min-width: 15rem; */
     /* border-radius: 1rem; */
+  }
+
+  .mob-nav-item {
+    padding: 0.5rem;
   }
 
   .nav-container {width: 100%;}
@@ -544,6 +551,10 @@ ul.nav-menu > a {
     margin-top: 15vh;
   }
 
+  .projects {
+    min-width: max-content !important;
+  }
+
   .project-title {
     font-size: 1.2rem;
   }
@@ -557,7 +568,9 @@ ul.nav-menu > a {
   }
   
   .project-row {
-    width: 90vw;
+    width: 86vw;
+    position: relative;
+    z-index: 0;
   }
 
   .project-container img {
@@ -577,9 +590,9 @@ ul.nav-menu > a {
     height: 25vh;
   }
 
-  .nav-menu {
+  /* .nav-menu {
     display: none;
-  }
+  } */
 
   .mobMenu {
     width: 2rem;
