@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, NavLink, Link } from "react-router-dom";
 import menu from '../assets/misc/menu.png'
+import { Squash as Hamburger } from 'hamburger-react'
 
 export default function Header() {
 
@@ -34,7 +35,8 @@ export default function Header() {
             </NavLink>
           </ul>
           <div className="mobile-menu">
-            <img src={menu} alt="" className='mobMenu' onClick={()=>setShowMenu(!showMenu)} style={{display: 'none'}}/>
+            <Hamburger className='hamburger-react mobMenu' toggled={showMenu} toggle={setShowMenu}/>
+            {/* <img src={menu} alt="" className='mobMenu' onClick={()=>setShowMenu(!showMenu)} style={{display: 'none'}}/> */}
             <ul className="nav-menu" style={{display:showMenu ? 'flex': 'none'}}>
               <NavLink exact to="/" activeClassName="active"  onClick={()=>setShowMenu(false)}>
                 <li className="mob-nav-item">Home</li>

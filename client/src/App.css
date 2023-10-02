@@ -189,6 +189,9 @@ ul.nav-menu > a {
   /* transition: text-decoration-thickness 200ms, text-decoration-color 500ms; */
 }
 
+.hamburger-react {
+  display: none !important;
+}
 
 /*----------------Home Page---------------------*/
 #intro {
@@ -581,6 +584,10 @@ ul.nav-menu > a {
   .mobMenu {
     width: 2rem;
     display: flex !important;
+  }
+
+  .hamburger-react {
+     display: flex !important;
   }
 
   .footer-section {
