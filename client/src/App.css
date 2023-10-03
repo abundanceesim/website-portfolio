@@ -442,7 +442,7 @@ ul.nav-menu > a {
     right: 0rem;
     text-align: center;
     overflow: hidden;
-    padding-top: 50%;
+    padding-top: 45%;
   }
 
   .mob-nav-item {
@@ -629,11 +629,21 @@ ul.nav-menu > a {
   }
 }
 
-@media only screen and (min-width: 768px), (min-width: 940px){
+/* @media only screen and (min-width: 768px), (min-width: 940px){
   .project-row {
     justify-content: center;
   }
-} 
+}  */
+
+@media only screen and (min-width: 768px) and (max-width: 1400px){
+  #page-container {
+      width: 84vw;
+    }
+
+    .project-row {
+      justify-content: center;
+    }
+}
 
 /*---------About page----------------------*/
 .about-page {

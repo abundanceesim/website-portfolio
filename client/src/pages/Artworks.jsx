@@ -2,7 +2,6 @@ import Artwork from '../components/Artwork'
 import artworks from '../components/allArtworks'
 
 export default function Artworks() {
-  // console.log(artworks);
   return (
     <>
       {artworks.length > 0 ? (
