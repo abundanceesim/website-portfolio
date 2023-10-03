@@ -15,9 +15,9 @@ html {
 }
 
 body {
-  background-color: #03011b;
-  /* background-color: #06022e; */
-  /* background-image: linear-gradient( #010124, #04012c); */
+  /* background-color: #03011b;
+  background-color: #06022e; */
+  background-image: linear-gradient( #010124, #04012c);
   height: 100%;
   color: white;
   /*little fade in animation*/
@@ -269,10 +269,6 @@ ul.nav-menu > a {
     width: 55vh;
   }
 
-  body{
-    margin-left: -1rem;
-  }
-
   .introPara {
     width: 70vw;
   }
@@ -453,9 +449,6 @@ ul.nav-menu > a {
     text-align: center;
     overflow: hidden;
     padding-top: 50%;
-    /* justify-content: center; */
-    /* min-width: 15rem; */
-    /* border-radius: 1rem; */
   }
 
   .mob-nav-item {
@@ -511,7 +504,7 @@ ul.nav-menu > a {
   }
 
   .contact-form {
-    width: 95vw;
+    width: 83vw;
     font-size: 1.10rem;
     flex-direction: column;
   }
@@ -568,7 +561,7 @@ ul.nav-menu > a {
   }
   
   .project-row {
-    width: 86vw;
+    width: 90vw;
     position: relative;
     z-index: 0;
   }
@@ -603,6 +596,19 @@ ul.nav-menu > a {
      display: flex !important;
   }
 
+  .about-page {
+    width: 90% !important;
+  }
+
+  .about-txt {
+    font-size: 1.1rem !important;
+  }
+
+  .about-row {
+    margin: 0 auto;
+    width: 72vw;
+  }
+
   .footer-section {
     z-index: -2;
   }
@@ -623,55 +629,61 @@ ul.nav-menu > a {
       width: 75vw;
     }
   .artwork {
-    width: 26vw;
-    height: 26vw;
+    width: 34vw;
+    height: 34vw;
   }
 }
+
+@media only screen and (min-width: 768px), (min-width: 940px){
+  .project-row {
+    justify-content: center;
+  }
+} 
 
 .art-container {}
 
 /*---------About page----------------------*/
+.about-page {
+  width: 80%;
+}
 .about-txt {
   font-family: 'Instrument Sans';
-  font-size: x-large;
+  font-size: larger;
 }
 
-.about-page {
-  width: 70%;
+.about-card {
+  width: 94%;
   margin: 0 auto;
   padding-top: 20px;
+  padding: 15px;
+  margin-top: 30px;
+  /* width: 100%; */
+  /* width: fit-content;
+  height: fit-content; */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.075);
+  /* animation-name: animate-open-scroll; */
+  animation-duration: 5s;
 }
 
-.profile-picture {
-  border-radius: 20px;
-  animation-duration: 0.2s;
-    animation-name: animate-fade;
-    animation-fill-mode: backwards;
-    animation-name: animate-pop;
-    animation-duration: 0.3s;
-   width: 100%;
-  /* height: 70%;  */
+.about-heading {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(171, 231, 52);
 }
 
-.image-container {
-  width: 50%;
-  /* Adjust the width as needed */
-  float: left;
-  /* Float the image to the left */
-  margin: 0 10px 10px 0;
-  /* Add margin for spacing */
+.about-links > a{
+  text-decoration: none !important;
+  color:rgb(215, 255, 136);
+  
 }
 
-.image-container img {
-  max-width: 100%;
-  height: auto;
+.about-links > a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: rgb(171, 231, 52);
+  /* text-decoration-thickness: 4px; */
+  text-underline-offset: 0.6rem;
 }
-
-.image-container p {
-  margin: 0;
-  /* Reset margin to avoid extra space */
-}
-
 /*---------Projects page----------------------*/
 .projects {
   padding-top: 10px;
@@ -743,11 +755,7 @@ ul.nav-menu > a {
   color: white !important;
 }
 
-@media only screen and (min-width: 768px), (min-width: 940px){
-  .project-row {
-    justify-content: center;
-  }
-} 
+
 
 /*------------Footer-----------------*/
 .footer-section {

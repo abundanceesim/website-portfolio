@@ -8,7 +8,7 @@ export default function Contact() {
   const msgHolder = 'Lorem ipsum?'
   const nameHolder = 'The Rock'
   const emailHolder = 'rocky@gmail.com'
-  const subjectHolder = 'Love your page!'
+  const subjectHolder = 'Let\'s get you hired!'
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -20,7 +20,8 @@ export default function Contact() {
   let isEmailValid = regex.test(email)
 
 
-  let isInvalid = !name || !isEmailValid || !subject || !message;
+  // let isInvalid = !name || !isEmailValid || !subject || !message;
+  let isInvalid = !name || !isEmailValid || !message;
 
   const notify = () => {
     toast.success("Thanks for your message!", {
