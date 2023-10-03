@@ -14,12 +14,16 @@ html {
   }
 }
 
+
+
 body {
   background-color: #03011b;
   /* background-color: #06022e;  */
   /* background-image: linear-gradient( #010124, #04012c); */
-  height: 100%;
+  height: 100vh;
   color: white;
+  display: flex;
+    flex-direction: column;
   /*little fade in animation*/
   animation-duration: 0.5s;
   animation-name: animate-fade;
@@ -27,6 +31,12 @@ body {
   animation-fill-mode: backwards;
   font-family: 'Instrument Sans';
 }
+
+/* body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
 
 #page-container {
   width: 63%;
@@ -38,7 +48,7 @@ body {
 }
 
 #content-wrap {
-  padding-bottom: 2.5rem;
+  /* padding-bottom: 2.5rem; */
 }
 
 .btn {
@@ -190,6 +200,7 @@ ul.nav-menu > a {
   overflow: hidden;
   /* overflow-y: hidden; */
   position: relative;
+  z-index: auto;
 }
 
 .bg {
@@ -466,7 +477,7 @@ ul.nav-menu > a {
   #intro {
     width: 100vw;
     overflow-x: hidden;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 7rem);
     z-index: -1;
   }
   
@@ -604,9 +615,12 @@ ul.nav-menu > a {
   }
 
   /*---Footer---*/
-  .footer-section {
+  /* .footer-section {
     z-index: -2;
-  }
+  } */
+
+  
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
@@ -616,6 +630,10 @@ ul.nav-menu > a {
   .artwork {
     width: 38vw;
     height: 40vw;
+  }
+
+  .wrapper {
+    height: 100% !important;
   }
 }
 
@@ -639,6 +657,9 @@ ul.nav-menu > a {
     width: 34vw;
     height: 34vw;
   }
+  .wrapper {
+    height: 100% !important
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1400px){
@@ -653,6 +674,7 @@ ul.nav-menu > a {
     .nav-container {
       margin-right: 5.5rem;
     }
+    
 }
 
 @media only screen and (min-width: 1400px) {
@@ -667,11 +689,17 @@ ul.nav-menu > a {
   .nav-container {
     margin-right: 6rem;
   }
+  .wrapper {
+      height: 100vh !important
+  }
 }
 
 /*---------About page----------------------*/
 .about-page {
   width: 80%;
+  /* animation-duration: 0.7s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards; */
 }
 .about-txt {
   font-family: 'Instrument Sans';
@@ -785,7 +813,7 @@ ul.nav-menu > a {
 
 
 /*------------Footer-----------------*/
-.footer-section {
+/* .footer-section {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -796,6 +824,18 @@ ul.nav-menu > a {
   justify-content: center;
   text-align: center;
   color: rgba(235, 235, 250, 0.856);
+} */
+
+.footer-section {
+  margin-top: auto;
+  width: 100%;
+    height: 3rem;
+    background-color: #020113;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgba(235, 235, 250, 0.856);
 }
 
 .footer {

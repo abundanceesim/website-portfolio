@@ -62,41 +62,43 @@ export default function Contact() {
 
   return (
     <>
-      <div className="contact-heading"><h1>Let's Connect!</h1></div>
+      <div className="wrapper">
+        <div className="contact-page" style={{height:"100vh"}}>
+          <div className="contact-heading"><h1>Let's Connect!</h1></div>
       
-      <form onSubmit={sendEmail} className='contact-form'>
-        <div className="name-and-email">
-          <div className="mb-3 name">
-            <label htmlFor="name" className="form-label">Name<span style={{color:"red"}}>*</span></label>
-            <input type="text" className={"form-control " + `${invalidName ? 'invalid': 'valid'}`} name="name"
-              aria-describedby="nameHelp" placeholder={nameHolder}
-              value={name} onChange={(e) => setName(e.target.value)}/>
+        <form onSubmit={sendEmail} className='contact-form'>
+          <div className="name-and-email">
+            <div className="mb-3 name">
+              <label htmlFor="name" className="form-label">Name<span style={{color:"red"}}>*</span></label>
+              <input type="text" className={"form-control " + `${invalidName ? 'invalid': 'valid'}`} name="name"
+                aria-describedby="nameHelp" placeholder={nameHolder}
+                value={name} onChange={(e) => setName(e.target.value)}/>
+            </div>
+            <div className="mb-3 email">
+              <label htmlFor="email" className="form-label">Email<span style={{color:"red"}}>*</span></label>
+              <input type="email" className={"form-control " + `${invalidEmail ? 'invalid': 'valid'}`} name="email"
+              aria-describedby="emailHelp" placeholder={emailHolder}
+              value={email} onChange={(e) => setEmail(e.target.value)}/>
+            </div>
           </div>
-          <div className="mb-3 email">
-            <label htmlFor="email" className="form-label">Email<span style={{color:"red"}}>*</span></label>
-            <input type="email" className={"form-control " + `${invalidEmail ? 'invalid': 'valid'}`} name="email"
-             aria-describedby="emailHelp" placeholder={emailHolder}
-             value={email} onChange={(e) => setEmail(e.target.value)}/>
+          <div className="mb-3">
+            <label htmlFor="subject" className="form-label">Subject</label>
+            <input type="text" className="form-control valid" name="subject"
+            aria-describedby="subjectHelp" placeholder={subjectHolder}
+            value={subject} onChange={(e) => setSubject(e.target.value)}/>
           </div>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="subject" className="form-label">Subject</label>
-          <input type="text" className="form-control valid" name="subject"
-           aria-describedby="subjectHelp" placeholder={subjectHolder}
-           value={subject} onChange={(e) => setSubject(e.target.value)}/>
-        </div>
-        <div className="mb-3">
-          <label htmlFor="message" className="form-label">Message<span style={{color:"red"}}>*</span></label>
-          <textarea type="text" className={"form-control " + "message " + `${invalidMessage ? 'invalid': 'valid'}`}
-           name="message" aria-describedby="messageHelp" placeholder={msgHolder}
-           value={message} onChange={(e) => setMessage(e.target.value)}/>
-        </div>
-        <div className="mt-4 mb-3 submit"title="Submit button disabled till all required fields contain valid data">
-          <button disabled={isInvalid} type="submit" onClick={notify} className="btn btn-primary submit-btn" 
-          >SUBMIT</button>
-        </div>
-      </form>
-      <ToastContainer
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label">Message<span style={{color:"red"}}>*</span></label>
+            <textarea type="text" className={"form-control " + "message " + `${invalidMessage ? 'invalid': 'valid'}`}
+            name="message" aria-describedby="messageHelp" placeholder={msgHolder}
+            value={message} onChange={(e) => setMessage(e.target.value)}/>
+          </div>
+          <div className="mt-4 mb-3 submit"title="Submit button disabled till all required fields contain valid data">
+            <button disabled={isInvalid} type="submit" onClick={notify} className="btn btn-primary submit-btn" 
+            >SUBMIT</button>
+          </div>
+        </form>
+        <ToastContainer
           position="top-right"
           autoClose={3000}
           hideProgressBar={false}
@@ -107,7 +109,11 @@ export default function Contact() {
           draggable
           pauseOnHover
           theme="colored"
-      />
+        />
+        </div>
+        
+      </div>
+      
     </>
   )
 }
