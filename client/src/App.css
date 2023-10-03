@@ -517,7 +517,7 @@ ul.nav-menu > a {
     font-size: 1.25rem;
     padding: 2px;
     position: relative;
-    z-index: -2;
+    z-index: 1;
   }
 
   input, textarea::placeholder{
@@ -624,10 +624,6 @@ ul.nav-menu > a {
       width: 75vw;
     }
 
-  /* #intro {
-      width: 75vw;
-  } */
-
   #content-wrap {
     width: 100vw;
   }
@@ -644,12 +640,6 @@ ul.nav-menu > a {
     height: 34vw;
   }
 }
-
-/* @media only screen and (min-width: 768px), (min-width: 940px){
-  .project-row {
-    justify-content: center;
-  }
-}  */
 
 @media only screen and (min-width: 768px) and (max-width: 1400px){
   #page-container {
@@ -675,16 +665,16 @@ ul.nav-menu > a {
   }
 
   .nav-container {
-    margin-right: 5.7rem;
+    margin-right: 6rem;
   }
 }
 
 /*---------About page----------------------*/
 .about-page {
   width: 80%;
-  animation-duration: 0.7s;
-    animation-name: animate-fade;
-    animation-fill-mode: backwards;
+  /* animation-duration: 0.7s;
+  animation-name: animate-fade;
+  animation-fill-mode: backwards; */
 }
 .about-txt {
   font-family: 'Instrument Sans';
@@ -697,13 +687,8 @@ ul.nav-menu > a {
   padding-top: 20px;
   padding: 15px;
   margin-top: 30px;
-  /* width: 100%; */
-  /* width: fit-content;
-  height: fit-content; */
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.075);
-  /* animation-name: animate-open-scroll; */
-  animation-duration: 5s;
 }
 
 .about-heading {
@@ -716,14 +701,26 @@ ul.nav-menu > a {
   color:rgb(215, 255, 136);
   text-decoration: none;
   text-decoration-line: underline;
-    text-decoration-color: rgb(171, 231, 52);
-    /* text-decoration-thickness: 4px; */
-    text-underline-offset: 0.45rem;
+  text-decoration-color: rgb(171, 231, 52);
+  text-underline-offset: 0.45rem;
 }
 
 .about-links > a:hover {
   color: white;
 }
+
+#first, #second, #third, #fourth {
+  animation-duration: 0.5s;
+  animation-name: animate-pop;
+  animation-timing-function: cubic-bezier(.45, .63, .84, 1.2);
+  animation-fill-mode: backwards;
+}
+
+#first {animation-delay: 0.05s;}
+#second {animation-delay: 0.15s;}
+#third {animation-delay: 0.25s;}
+#fourth {animation-delay: 0.35s;}
+
 /*---------Projects page----------------------*/
 .projects {
   padding-top: 10px;
@@ -744,8 +741,6 @@ ul.nav-menu > a {
 }
 
 .project-card:hover {
-  /* border: solid 1px rgb(171, 231, 52); */
-  /* background: rgba(236, 236, 253, 0.199); */
   background: rgba(255, 255, 255, 0.116);
   transition-delay: 50ms;
   transition-timing-function: ease-in;
@@ -755,7 +750,6 @@ ul.nav-menu > a {
 
 .project-title {
   color: rgb(171, 231, 52);
-  /* font-size: 22px; */
   font-family: 'Instrument Sans', serif;
 }
 
@@ -775,15 +769,12 @@ ul.nav-menu > a {
   padding: 14px 5px;
   text-align: right;
   animation-duration: 0.7s;
-    animation-name: animate-fade;
-    animation-fill-mode: backwards;
-    /* animation-name: animate-pop;
-    animation-duration: 0.3s */
+  animation-name: animate-fade;
+  animation-fill-mode: backwards;
 }
 
 .github-source-btn {
   width: 26%;
-  /* yellowgreen used previously */
   border-color: rgb(171, 231, 52) !important;
   background-color: transparent !important;
   color: rgb(171, 231, 52) !important;
@@ -794,7 +785,6 @@ ul.nav-menu > a {
   border-color: rgb(171, 231, 52) !important;
   color: white !important;
 }
-
 
 
 /*------------Footer-----------------*/

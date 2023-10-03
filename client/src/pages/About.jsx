@@ -5,14 +5,14 @@ export default function About() {
 
   const skills = [
     "Java", "HTML", "CSS", "JavaScript", "React", "Angular", "Bootstrap", "Node.js",
-    "Docker", "Express", "MongoDB", "Python", "SQL", "Linux", "PHP", "MySQL", "Android"
+    "Docker", "Express", "MongoDB", "Python", "SQL", "Linux", "PHP", "ViM", "Bash","MySQL", "Android"
   ]
 
   return (
     <>
       <div className="container about-page">
         <div className="about-row row gap-3">
-          <div className=" col-3 about-card">
+          <div className=" col-3 about-card p-4" id="first">
             <div className="about-txt about-txt-primary">
               <h4 className="about-heading">Who Am I?</h4>
               Hi, I'm Abundance Esim, a software developer and recent Computer
@@ -22,7 +22,7 @@ export default function About() {
               languages including Java and Python.
             </div>
           </div>
-          <div className="col-3 about-card p-4">
+          <div className="col-3 about-card p-4" id="second">
             <div className="about-txt about-txt-secondary">
               <h4 className="about-heading">Skills</h4>
               <div className="row gap-1">
@@ -37,7 +37,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className=" col-3 about-card">
+          <div className=" col-3 about-card p-4" id="third">
             <div className="about-txt about-txt-secondary">
               <h4 className="about-heading">Extra Curricular</h4>
               When I'm not immersed in lines of code, you'll likely find me
@@ -47,10 +47,10 @@ export default function About() {
               these pursuits keep me energized and inspired.
             </div>
           </div>
-          <div className="col-3 about-card mb-2">
+          <div className="col-3 about-card mb-20 p-4" id="fourth">
             <div className="about-txt about-txt-secondary">
               <h4 className="about-heading">Connect</h4>
-              <div>
+              <div className="pb-3">
                 If my profile matches the description of someone you'd like to
                 join your team, feel free to{" "}
                 <span className="about-links">
