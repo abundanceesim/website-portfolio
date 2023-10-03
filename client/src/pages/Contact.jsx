@@ -22,6 +22,9 @@ export default function Contact() {
 
   // let isInvalid = !name || !isEmailValid || !subject || !message;
   let isInvalid = !name || !isEmailValid || !message;
+  let invalidName = !name;
+  let invalidEmail = !isEmailValid;
+  let invalidMessage = !message;
 
   const notify = () => {
     toast.success("Thanks for your message!", {
@@ -65,26 +68,26 @@ export default function Contact() {
         <div className="name-and-email">
           <div className="mb-3 name">
             <label htmlFor="name" className="form-label">Name<span style={{color:"red"}}>*</span></label>
-            <input type="text" className="form-control" name="name"
+            <input type="text" className={"form-control " + `${invalidName ? 'invalid': 'valid'}`} name="name"
               aria-describedby="nameHelp" placeholder={nameHolder}
               value={name} onChange={(e) => setName(e.target.value)}/>
           </div>
           <div className="mb-3 email">
             <label htmlFor="email" className="form-label">Email<span style={{color:"red"}}>*</span></label>
-            <input type="email" className="form-control" name="email"
+            <input type="email" className={"form-control " + `${invalidEmail ? 'invalid': 'valid'}`} name="email"
              aria-describedby="emailHelp" placeholder={emailHolder}
              value={email} onChange={(e) => setEmail(e.target.value)}/>
           </div>
         </div>
         <div className="mb-3">
           <label htmlFor="subject" className="form-label">Subject</label>
-          <input type="text" className="form-control" name="subject"
+          <input type="text" className="form-control valid" name="subject"
            aria-describedby="subjectHelp" placeholder={subjectHolder}
            value={subject} onChange={(e) => setSubject(e.target.value)}/>
         </div>
         <div className="mb-3">
           <label htmlFor="message" className="form-label">Message<span style={{color:"red"}}>*</span></label>
-          <textarea type="text" className="form-control message"
+          <textarea type="text" className={"form-control " + "message " + `${invalidMessage ? 'invalid': 'valid'}`}
            name="message" aria-describedby="messageHelp" placeholder={msgHolder}
            value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
