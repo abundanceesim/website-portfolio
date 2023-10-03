@@ -5,7 +5,7 @@ export default function About() {
 
   const skills = [
     "Java", "HTML", "CSS", "JavaScript", "React", "Angular", "Bootstrap", "Node.js",
-    "Docker", "Express", "MongoDB", "Python", "SQL", "Linux", "PHP"
+    "Docker", "Express", "MongoDB", "Python", "SQL", "Linux", "PHP", "MySQL", "Android"
   ]
 
   return (

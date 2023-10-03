@@ -15,9 +15,9 @@ html {
 }
 
 body {
-  /* background-color: #03011b;
-  background-color: #06022e; */
-  background-image: linear-gradient( #010124, #04012c);
+  background-color: #03011b;
+  /* background-color: #06022e;  */
+  /* background-image: linear-gradient( #010124, #04012c); */
   height: 100%;
   color: white;
   /*little fade in animation*/
@@ -607,6 +607,9 @@ ul.nav-menu > a {
   .about-row {
     margin: 0 auto;
     width: 72vw;
+    animation-duration: 0.5s;
+    animation-name: animate-pop;
+    animation-timing-function: cubic-bezier(.45, .63, .84, 1.2);
   }
 
   .footer-section {
@@ -645,6 +648,9 @@ ul.nav-menu > a {
 /*---------About page----------------------*/
 .about-page {
   width: 80%;
+  animation-duration: 0.7s;
+    animation-name: animate-fade;
+    animation-fill-mode: backwards;
 }
 .about-txt {
   font-family: 'Instrument Sans';
@@ -673,16 +679,16 @@ ul.nav-menu > a {
 }
 
 .about-links > a{
-  text-decoration: none !important;
   color:rgb(215, 255, 136);
-  
+  text-decoration: none;
+  text-decoration-line: underline;
+    text-decoration-color: rgb(171, 231, 52);
+    /* text-decoration-thickness: 4px; */
+    text-underline-offset: 0.45rem;
 }
 
 .about-links > a:hover {
-  text-decoration-line: underline;
-  text-decoration-color: rgb(171, 231, 52);
-  /* text-decoration-thickness: 4px; */
-  text-underline-offset: 0.6rem;
+  color: white;
 }
 /*---------Projects page----------------------*/
 .projects {

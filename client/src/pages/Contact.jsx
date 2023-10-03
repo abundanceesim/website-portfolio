@@ -64,13 +64,13 @@ export default function Contact() {
       <form onSubmit={sendEmail} className='contact-form'>
         <div className="name-and-email">
           <div className="mb-3 name">
-            <label htmlFor="name" className="form-label">Name</label>
+            <label htmlFor="name" className="form-label">Name<span style={{color:"red"}}>*</span></label>
             <input type="text" className="form-control" name="name"
               aria-describedby="nameHelp" placeholder={nameHolder}
               value={name} onChange={(e) => setName(e.target.value)}/>
           </div>
           <div className="mb-3 email">
-            <label htmlFor="email" className="form-label">Email</label>
+            <label htmlFor="email" className="form-label">Email<span style={{color:"red"}}>*</span></label>
             <input type="email" className="form-control" name="email"
              aria-describedby="emailHelp" placeholder={emailHolder}
              value={email} onChange={(e) => setEmail(e.target.value)}/>
@@ -83,7 +83,7 @@ export default function Contact() {
            value={subject} onChange={(e) => setSubject(e.target.value)}/>
         </div>
         <div className="mb-3">
-          <label htmlFor="message" className="form-label">Message</label>
+          <label htmlFor="message" className="form-label">Message<span style={{color:"red"}}>*</span></label>
           <textarea type="text" className="form-control message"
            name="message" aria-describedby="messageHelp" placeholder={msgHolder}
            value={message} onChange={(e) => setMessage(e.target.value)}/>
