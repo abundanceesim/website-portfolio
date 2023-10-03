@@ -88,8 +88,9 @@ export default function Contact() {
            name="message" aria-describedby="messageHelp" placeholder={msgHolder}
            value={message} onChange={(e) => setMessage(e.target.value)}/>
         </div>
-        <div className="mt-4 mb-3 submit">
-          <button disabled={isInvalid} type="submit" onClick={notify} className="btn btn-primary submit-btn">SUBMIT</button>
+        <div className="mt-4 mb-3 submit"title="Submit button disabled till all required fields contain valid data">
+          <button disabled={isInvalid} type="submit" onClick={notify} className="btn btn-primary submit-btn" 
+          >SUBMIT</button>
         </div>
       </form>
       <ToastContainer
