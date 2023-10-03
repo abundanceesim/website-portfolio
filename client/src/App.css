@@ -672,9 +672,6 @@ ul.nav-menu > a {
 /*---------About page----------------------*/
 .about-page {
   width: 80%;
-  /* animation-duration: 0.7s;
-  animation-name: animate-fade;
-  animation-fill-mode: backwards; */
 }
 .about-txt {
   font-family: 'Instrument Sans';

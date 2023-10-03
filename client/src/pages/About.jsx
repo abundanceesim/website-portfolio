@@ -4,7 +4,7 @@ import React from "react";
 export default function About() {
 
   const skills = [
-    "Java", "HTML", "CSS", "JavaScript", "React", "Angular", "Bootstrap", "Node.js",
+    "Java", "HTML", "CSS", "JavaScript", "React", "Angular", "Typescript", "Bootstrap", "Node.js",
     "Docker", "Express", "MongoDB", "Python", "SQL", "Linux", "PHP", "ViM", "Bash","MySQL", "Android"
   ]
 
