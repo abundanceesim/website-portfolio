@@ -29,7 +29,7 @@ body {
 }
 
 #page-container {
-  width: 57%;
+  width: 63%;
   /* height: 100vh; */
   margin: 0 auto;
   min-width: min-content;
@@ -185,7 +185,7 @@ ul.nav-menu > a {
 #intro {
   height: calc(100vh - 7rem);
   width: 100vw;
-  max-width: 68rem;
+  max-width: 75rem;
   margin: 0 auto ;
   overflow: hidden;
   /* overflow-y: hidden; */
@@ -614,8 +614,8 @@ ul.nav-menu > a {
     width: 100vw;
   }
   .artwork {
-    width: 45vw;
-    height: 45vw;
+    width: 38vw;
+    height: 40vw;
   }
 }
 
@@ -623,6 +623,22 @@ ul.nav-menu > a {
   #page-container {
       width: 75vw;
     }
+
+  /* #intro {
+      width: 75vw;
+  } */
+
+  #content-wrap {
+    width: 100vw;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
+  .art-page {
+    width: 75vw;
+  }
   .artwork {
     width: 34vw;
     height: 34vw;
@@ -643,6 +659,24 @@ ul.nav-menu > a {
     .project-row {
       justify-content: center;
     }
+
+    .nav-container {
+      margin-right: 5.5rem;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+  .project-row {
+    justify-content: center;
+  }
+
+  .art-page {
+    width: 90%;
+  }
+
+  .nav-container {
+    margin-right: 5.7rem;
+  }
 }
 
 /*---------About page----------------------*/
