@@ -718,6 +718,24 @@ ul.nav-menu > a {
   }
 }
 
+@media only screen and (min-width: 1600px) and (max-width: 1700px){
+  /* .project-row {
+    justify-content: center;
+  } */
+
+  .art-page {
+    width: 71%;
+  }
+
+  /* .nav-container {
+    margin-right: 6rem;
+  }
+*/
+  .wrapper {
+    height: 100% !important
+  }
+}
+
 /*---------About page----------------------*/
 .about-page {
   width: 80%;
@@ -747,15 +765,21 @@ ul.nav-menu > a {
 }
 
 .about-links > a{
-  color:rgb(215, 255, 136);
+  /* color:rgb(171, 231, 52); */
+  color: white;
   text-decoration: none;
   text-decoration-line: underline;
   text-decoration-color: rgb(171, 231, 52);
+  /* text-decoration-color: white; */
   text-underline-offset: 0.45rem;
+  transition-property: color;
+  transition-timing-function: ease-in;
+
 }
 
 .about-links > a:hover {
-  color: white;
+  /* color: white; */
+  color: rgb(171, 231, 52);
 }
 
 #first, #second, #third, #fourth {
