@@ -1,5 +1,5 @@
 import me from "../assets/personal/abundance-snow.png";
-import {FaLinkedin, FaGithub} from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import Footer from "../components/Footer";
 
 
@@ -38,13 +38,17 @@ export default function Home() {
                   style={{ color: "white" }}
                 />
               </a>
+              <a href="mailto:abundanceesim@gmail.com ">
+                <FaEnvelope
+                  className="mt-3 home-icon"
+                  style={{ color: "white" }}
+                />
+              </a>
             </div>
           </div>
           <img className="bg" src={me} alt="abundance-esim" />
         </div>
-        
       </section>
-      
     </>
   );
 }

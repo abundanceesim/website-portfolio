@@ -61,6 +61,7 @@ body {
   /* width: 80%; */
   margin: 0 auto ;
   min-width: fit-content;
+  height: 100vh;
 }
 
 .not-found-img {
@@ -284,6 +285,7 @@ ul.nav-menu > a {
   font-weight: 600;
   animation-duration: 0.7s;
   animation-name: animate-pop;
+  width: 10rem !important;
 }
 
 .introContent > span, .introPara {
@@ -503,7 +505,7 @@ ul.nav-menu > a {
     margin-top: 0px !important;
     padding-top: 2px !important;
     font-size: 1.25rem !important; 
-    width: 6.5rem !important;
+    width: 10rem !important;
   }
 
   .home-icon {
@@ -619,8 +621,6 @@ ul.nav-menu > a {
     z-index: -2;
   } */
 
-  
-    
 }
 
 @media only screen and (min-width: 768px) and (max-width:992px) {
@@ -654,9 +654,26 @@ ul.nav-menu > a {
     width: 75vw;
   }
   .artwork {
-    width: 34vw;
-    height: 34vw;
+    width: 38vw;
+    height: 38vw;
   }
+
+  .about-page {
+    height: 100vh;
+  }
+
+  .nav-container, .contact-form, input, textarea {
+    font-size: larger;
+  }
+
+  .nav-logo > a {
+    font-size: 2.6rem;
+  }
+
+  .nav-item {
+    width: 70px;
+  }
+
   .wrapper {
     height: 100% !important
   }
@@ -667,14 +684,21 @@ ul.nav-menu > a {
       width: 84vw;
     }
 
-    .project-row {
-      justify-content: center;
-    }
-
     .nav-container {
       margin-right: 5.5rem;
     }
     
+    .navbar {
+      width: 100vw;
+    }
+
+    .project-row {
+      justify-content: center;
+    }
+
+    .art-page {
+      width: 83vw;
+    }
 }
 
 @media only screen and (min-width: 1400px) {

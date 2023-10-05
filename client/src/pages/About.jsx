@@ -20,7 +20,7 @@ export default function About() {
                 Programming graduate. I have experience building web
                 applications, particularly using JavaScript, Node.js, Angular
                 and React. Asides from these, I'm also proficient in a number of
-                programming languages including Java and Python.
+                programming languages including Java, Typescript and Python.
               </div>
             </div>
             <div className="col-3 about-card p-4" id="second">
@@ -53,9 +53,17 @@ export default function About() {
                 <h4 className="about-heading">Connect</h4>
                 <div className="pb-3">
                   If my profile matches the description of someone you'd like to
-                  join your team, feel free to{" "}
+                  join your team, feel free to connect via{" "}
                   <span className="about-links">
-                    <a href="/contact">connect</a>
+                    <a href="http://www.linkedin.com/in/abundance-esim">
+                      LinkedIn 
+                    </a>
+                  </span>
+                  {" "} or by{" "}
+                  <span className="about-links">
+                    <a href="mailto:abundanceesim@gmail.com">
+                      email
+                    </a>
                   </span>
                   , otherwise, you can check out my{" "}
                   <span className="about-links">
