@@ -40,7 +40,7 @@ export default function About() {
             </div>
             <div className=" col-3 about-card p-4" id="third">
               <div className="about-txt about-txt-secondary">
-                <h4 className="about-heading">Extra Curricular</h4>
+                <h4 className="about-heading">Extracurricular</h4>
                 When I'm not immersed in lines of code, you'll likely find me
                 exploring new art mediums, either digitally or traditionally. I
                 also really enjoy playing online multiplayer games like Apex
@@ -53,7 +53,7 @@ export default function About() {
                 <h4 className="about-heading">Connect</h4>
                 <div className="pb-3">
                   If my profile matches the description of someone you'd like to
-                  join your team, feel free to connect via{" "}
+                  work with, feel free to connect via{" "}
                   <span className="about-links">
                     <a href="http://www.linkedin.com/in/abundance-esim">
                       LinkedIn 
