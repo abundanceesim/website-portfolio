@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website-portfolio/static/css/main.76294431.css",
-    "main.js": "/website-portfolio/static/js/main.a752aba1.js",
+    "main.js": "/website-portfolio/static/js/main.feac941e.js",
     "static/js/787.c4e7f8f9.chunk.js": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js",
     "static/media/scorpion-mk11.png": "/website-portfolio/static/media/scorpion-mk11.4cdabd1bc9707861eb9e.png",
     "static/media/kakashi-sensei.png": "/website-portfolio/static/media/kakashi-sensei.3dd8c9de4b6ef6d63561.png",
@@ -19,11 +19,11 @@
     "static/media/products-app.png": "/website-portfolio/static/media/products-app.af97db1672ee929d1e94.png",
     "index.html": "/website-portfolio/index.html",
     "main.76294431.css.map": "/website-portfolio/static/css/main.76294431.css.map",
-    "main.a752aba1.js.map": "/website-portfolio/static/js/main.a752aba1.js.map",
+    "main.feac941e.js.map": "/website-portfolio/static/js/main.feac941e.js.map",
     "787.c4e7f8f9.chunk.js.map": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76294431.css",
-    "static/js/main.a752aba1.js"
+    "static/js/main.feac941e.js"
   ]
 }
