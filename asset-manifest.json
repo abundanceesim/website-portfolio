@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/website-portfolio/static/css/main.f2923297.css",
-    "main.js": "/website-portfolio/static/js/main.a752aba1.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js",
-    "static/media/scorpion-mk11.png": "/website-portfolio/static/media/scorpion-mk11.4cdabd1bc9707861eb9e.png",
-    "static/media/kakashi-sensei.png": "/website-portfolio/static/media/kakashi-sensei.3dd8c9de4b6ef6d63561.png",
-    "static/media/todo-app.png": "/website-portfolio/static/media/todo-app.a9183f5c8f685a8f104a.png",
-    "static/media/abundance-snow.png": "/website-portfolio/static/media/abundance-snow.4aca78bacaad41c79324.png",
-    "static/media/flame.png": "/website-portfolio/static/media/flame.b7e6c3ca8b84e040f2b7.png",
-    "static/media/figure-drawing.png": "/website-portfolio/static/media/figure-drawing.f8d542149d0a95532355.png",
-    "static/media/glassfish.png": "/website-portfolio/static/media/glassfish.a41b6d0b843193ccf3c1.png",
-    "static/media/grey-woman.png": "/website-portfolio/static/media/grey-woman.225baaf2c41716c69ba9.png",
-    "static/media/goal-tracker.png": "/website-portfolio/static/media/goal-tracker.b4bc06085dac6ca5f716.png",
-    "static/media/project-management.png": "/website-portfolio/static/media/project-management.4455b046ac4a02ba11d2.png",
-    "static/media/error404.png": "/website-portfolio/static/media/error404.dcc16bc2dac662e5b7e0.png",
-    "static/media/rest-acmecollege.png": "/website-portfolio/static/media/rest-acmecollege.0ee91a5c8470a07fb76c.png",
-    "static/media/potato-inventory.png": "/website-portfolio/static/media/potato-inventory.f2e2f5cdff708fdaa6e8.png",
-    "static/media/products-app.png": "/website-portfolio/static/media/products-app.af97db1672ee929d1e94.png",
-    "index.html": "/website-portfolio/index.html",
-    "main.f2923297.css.map": "/website-portfolio/static/css/main.f2923297.css.map",
-    "main.a752aba1.js.map": "/website-portfolio/static/js/main.a752aba1.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/static/css/main.76294431.css",
+    "main.js": "/static/js/main.b87842f3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/scorpion-mk11.png": "/static/media/scorpion-mk11.4cdabd1bc9707861eb9e.png",
+    "static/media/kakashi-sensei.png": "/static/media/kakashi-sensei.3dd8c9de4b6ef6d63561.png",
+    "static/media/todo-app.png": "/static/media/todo-app.a9183f5c8f685a8f104a.png",
+    "static/media/abundance-snow.png": "/static/media/abundance-snow.4aca78bacaad41c79324.png",
+    "static/media/flame.png": "/static/media/flame.b7e6c3ca8b84e040f2b7.png",
+    "static/media/figure-drawing.png": "/static/media/figure-drawing.f8d542149d0a95532355.png",
+    "static/media/glassfish.png": "/static/media/glassfish.a41b6d0b843193ccf3c1.png",
+    "static/media/grey-woman.png": "/static/media/grey-woman.225baaf2c41716c69ba9.png",
+    "static/media/goal-tracker.png": "/static/media/goal-tracker.b4bc06085dac6ca5f716.png",
+    "static/media/project-management.png": "/static/media/project-management.4455b046ac4a02ba11d2.png",
+    "static/media/error404.png": "/static/media/error404.dcc16bc2dac662e5b7e0.png",
+    "static/media/rest-acmecollege.png": "/static/media/rest-acmecollege.0ee91a5c8470a07fb76c.png",
+    "static/media/potato-inventory.png": "/static/media/potato-inventory.f2e2f5cdff708fdaa6e8.png",
+    "static/media/products-app.png": "/static/media/products-app.af97db1672ee929d1e94.png",
+    "index.html": "/index.html",
+    "main.76294431.css.map": "/static/css/main.76294431.css.map",
+    "main.b87842f3.js.map": "/static/js/main.b87842f3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2923297.css",
-    "static/js/main.a752aba1.js"
+    "static/css/main.76294431.css",
+    "static/js/main.b87842f3.js"
   ]
 }
