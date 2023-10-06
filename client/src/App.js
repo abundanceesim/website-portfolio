@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.css';
 import About from './pages/About';
 import Artworks from './pages/Artworks';
@@ -12,7 +12,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/website-portfolio">
         <div id="page-container">
           <div id="content-wrap">
             <Header />
@@ -23,12 +23,11 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />
-              <Route path="/website-portfolio/" element={<Navigate to="/" replace />} />
             </Routes>
             <Footer />
           </div>
         </div>
-      </Router>
+      </BrowserRouter>
     </>
   );
     
