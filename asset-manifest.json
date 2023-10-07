@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/website-portfolio/static/css/main.23e95ec7.css",
+    "main.css": "/website-portfolio/static/css/main.cb8d1dcb.css",
     "main.js": "/website-portfolio/static/js/main.396a65b9.js",
     "static/js/787.c4e7f8f9.chunk.js": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js",
     "static/media/scorpion-mk11.png": "/website-portfolio/static/media/scorpion-mk11.4cdabd1bc9707861eb9e.png",
@@ -18,12 +18,12 @@
     "static/media/potato-inventory.png": "/website-portfolio/static/media/potato-inventory.f2e2f5cdff708fdaa6e8.png",
     "static/media/products-app.png": "/website-portfolio/static/media/products-app.af97db1672ee929d1e94.png",
     "index.html": "/website-portfolio/index.html",
-    "main.23e95ec7.css.map": "/website-portfolio/static/css/main.23e95ec7.css.map",
+    "main.cb8d1dcb.css.map": "/website-portfolio/static/css/main.cb8d1dcb.css.map",
     "main.396a65b9.js.map": "/website-portfolio/static/js/main.396a65b9.js.map",
     "787.c4e7f8f9.chunk.js.map": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23e95ec7.css",
+    "static/css/main.cb8d1dcb.css",
     "static/js/main.396a65b9.js"
   ]
 }
