@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website-portfolio/static/css/main.0b86ca84.css",
-    "main.js": "/website-portfolio/static/js/main.6c4d93f9.js",
+    "main.css": "/website-portfolio/static/css/main.4ad04b48.css",
+    "main.js": "/website-portfolio/static/js/main.c4a7851f.js",
     "static/js/787.c4e7f8f9.chunk.js": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js",
     "static/media/scorpion-mk11.png": "/website-portfolio/static/media/scorpion-mk11.4cdabd1bc9707861eb9e.png",
     "static/media/kakashi-sensei.png": "/website-portfolio/static/media/kakashi-sensei.3dd8c9de4b6ef6d63561.png",
@@ -18,12 +18,12 @@
     "static/media/potato-inventory.png": "/website-portfolio/static/media/potato-inventory.f2e2f5cdff708fdaa6e8.png",
     "static/media/products-app.png": "/website-portfolio/static/media/products-app.af97db1672ee929d1e94.png",
     "index.html": "/website-portfolio/index.html",
-    "main.0b86ca84.css.map": "/website-portfolio/static/css/main.0b86ca84.css.map",
-    "main.6c4d93f9.js.map": "/website-portfolio/static/js/main.6c4d93f9.js.map",
+    "main.4ad04b48.css.map": "/website-portfolio/static/css/main.4ad04b48.css.map",
+    "main.c4a7851f.js.map": "/website-portfolio/static/js/main.c4a7851f.js.map",
     "787.c4e7f8f9.chunk.js.map": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b86ca84.css",
-    "static/js/main.6c4d93f9.js"
+    "static/css/main.4ad04b48.css",
+    "static/js/main.c4a7851f.js"
   ]
 }
