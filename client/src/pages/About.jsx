@@ -1,5 +1,5 @@
 import React from "react";
-// import me from '../assets/personal/abundance_transparent_bg.png'
+import { Link } from "react-router-dom";
 
 export default function About() {
 
@@ -51,27 +51,29 @@ export default function About() {
             <div className="col-3 about-card mb-20 p-4" id="fourth">
               <div className="about-txt about-txt-secondary">
                 <h4 className="about-heading">Connect</h4>
-                <div className="pb-3">
+                <div >
                   If my profile matches the description of someone you'd like to
                   work with, feel free to connect via{" "}
                   <span className="about-links">
                     <a href="http://www.linkedin.com/in/abundance-esim">
-                      LinkedIn 
+                      LinkedIn
                     </a>
-                  </span>
-                  {" "} or by{" "}
+                  </span>{" "}
+                  or by{" "}
                   <span className="about-links">
-                    <a href="mailto:abundanceesim@gmail.com">
-                      email
-                    </a>
+                    <a href="mailto:abundanceesim@gmail.com">email</a>
                   </span>
                   , otherwise, you can check out my{" "}
-                  <span className="about-links">
-                    <a href="/projects">projects</a>
+                  <span className="about-links" style={{display:"inline-block"}}>
+                    <Link exact to="/projects" style={{ display: "inline !important" }}>
+                      <p>projects</p>
+                    </Link>
                   </span>{" "}
                   or{" "}
-                  <span className="about-links">
-                    <a href="/artworks">art</a>.
+                  <span className="about-links" style={{display:"inline-block"}}>
+                    <Link exact to="/artworks" style={{ display: "inline !important" }}>
+                      <p>art.</p>
+                    </Link>
                   </span>
                 </div>
               </div>

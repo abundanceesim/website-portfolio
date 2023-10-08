@@ -1,6 +1,7 @@
 import me from "../assets/personal/abundance-snow.png";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -18,13 +19,9 @@ export default function Home() {
             visually appealing and user friendly web applications.
           </p>
           <div className="home-btns">
-            <a
-              className="mt-2 btn btn-outline-primary github-source-btn connect-btn"
-              style={{ width: "fit-content" }}
-              href="/contact"
-            >
-              SAY HI
-            </a>
+            <Link exact to="/contact">
+              <p className="mt-2 mb-0 btn btn-outline-primary github-source-btn connect-btn">SAY HI</p>
+            </Link>
             <div className="d-flex gap-2 align-items-center">
               <a href="http://www.linkedin.com/in/abundance-esim">
                 <FaLinkedin

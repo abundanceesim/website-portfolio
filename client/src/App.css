@@ -730,13 +730,21 @@ ul.nav-menu > a {
     width: 77vw;
   }
 
+  .wrapper {
+    height: unset !important;
+  }
+
+  .navbar {
+    z-index: 2;
+  }
+
   .nav-container {
     margin-right: 6rem;
   }
 
   /*-------About Page--------*/
   .bg {
-    right: -0.5rem
+    right: -0.5rem;
   }
 
   /*-------Art Page----------*/
@@ -749,35 +757,39 @@ ul.nav-menu > a {
   }
 
   /*------Projects Page----------*/
-  .projects {
-    min-width: max-content !important;
-    margin-left: 22px !important;
-  }
+    .projects {
+      /* min-width: max-content !important; */
+      margin-left: 5.5rem;
+    }
+  
+    .project-title {
+      font-size: 1.2rem;
+    }
+  
+    .project-card {
+      z-index: -3;
+      width: 90vw;
+      margin-left: 0.5rem;
+      font-size: 0.92rem !important;
+      border-radius: 0.9rem !important;
+    }
+  
+    .project-row {
+      /* width: 90vw; */
+      position: relative;
+      z-index: 0;
+      justify-content: unset;
+    }
+  
+    .project-container img {
+      /* width: 80vw !important; */
+      height: 36vh !important;
+      border-radius: 0.6rem !important;
+    }
 
-  .project-title {
-    font-size: 1.2rem;
-  }
-
-  .project-card {
-    z-index: -3;
-    width: 90vw;
-    margin-left: 0.5rem;
-    font-size: 0.92rem !important;
-    border-radius: 0.9rem !important;
-  }
-
-  .project-row {
-    width: 90vw;
-    position: relative;
-    z-index: 0;
-    justify-content: unset;
-  }
-
-  .project-container img {
-    /* width: 80vw !important; */
-    height: 36vh !important;
-    border-radius: 0.6rem !important;
-  }
+    .contact-page{
+      height: 100% !important;
+    }
 }
 
 /* @media only screen and (min-width: 1441px) and (max-width: 1599px) {
@@ -801,6 +813,12 @@ ul.nav-menu > a {
 */
   .wrapper {
     height: 100% !important
+  }
+}
+
+@media (width >= 1700px){
+  .wrapper {
+    height: 100% !important;
   }
 }
 
