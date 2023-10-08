@@ -173,7 +173,7 @@ ul.nav-menu > a {
 
 .nav-item {
   margin-left: 20px;
-  cursor: pointer; 
+  /* cursor: pointer;  */ 
   width: 56px;
   text-align: center;
 }
@@ -913,7 +913,7 @@ ul.nav-menu > a {
 }
 
 .project-container img {
-  cursor: pointer;
+  /* cursor: pointer; */
   width: 460px;
   height: 300px;
   margin-bottom: 10px;
