@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/website-portfolio/static/css/main.3da009c2.css",
-    "main.js": "/website-portfolio/static/js/main.c4a7851f.js",
+    "main.css": "/website-portfolio/static/css/main.7a175a8a.css",
+    "main.js": "/website-portfolio/static/js/main.4a694f8b.js",
     "static/js/787.c4e7f8f9.chunk.js": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/profile-img-cropped-4.png": "/website-portfolio/static/media/profile-img-cropped-4.8042b22307f31cb4015f.png",
     "static/media/scorpion-mk11.png": "/website-portfolio/static/media/scorpion-mk11.4cdabd1bc9707861eb9e.png",
     "static/media/kakashi-sensei.png": "/website-portfolio/static/media/kakashi-sensei.3dd8c9de4b6ef6d63561.png",
     "static/media/todo-app.png": "/website-portfolio/static/media/todo-app.a9183f5c8f685a8f104a.png",
-    "static/media/abundance-snow.png": "/website-portfolio/static/media/abundance-snow.4aca78bacaad41c79324.png",
     "static/media/flame.png": "/website-portfolio/static/media/flame.b7e6c3ca8b84e040f2b7.png",
     "static/media/figure-drawing.png": "/website-portfolio/static/media/figure-drawing.f8d542149d0a95532355.png",
     "static/media/glassfish.png": "/website-portfolio/static/media/glassfish.a41b6d0b843193ccf3c1.png",
@@ -18,12 +18,12 @@
     "static/media/potato-inventory.png": "/website-portfolio/static/media/potato-inventory.f2e2f5cdff708fdaa6e8.png",
     "static/media/products-app.png": "/website-portfolio/static/media/products-app.af97db1672ee929d1e94.png",
     "index.html": "/website-portfolio/index.html",
-    "main.3da009c2.css.map": "/website-portfolio/static/css/main.3da009c2.css.map",
-    "main.c4a7851f.js.map": "/website-portfolio/static/js/main.c4a7851f.js.map",
+    "main.7a175a8a.css.map": "/website-portfolio/static/css/main.7a175a8a.css.map",
+    "main.4a694f8b.js.map": "/website-portfolio/static/js/main.4a694f8b.js.map",
     "787.c4e7f8f9.chunk.js.map": "/website-portfolio/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3da009c2.css",
-    "static/js/main.c4a7851f.js"
+    "static/css/main.7a175a8a.css",
+    "static/js/main.4a694f8b.js"
   ]
 }
