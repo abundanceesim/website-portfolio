@@ -48,6 +48,7 @@ body {
 }
 
 #content-wrap {
+  /* height: 100vh; */
   /* padding-bottom: 2.5rem; */
 }
 
@@ -206,9 +207,9 @@ ul.nav-menu > a {
 
 .bg {
   position: absolute;
-  top: -3.5rem;
+  top: -5rem;
   /* top: 2rem; */
-  right: -2.5rem;
+  right: -1.7rem;
   z-index: -1;
   object-fit: cover;
   height: 100vh;
@@ -420,6 +421,47 @@ ul.nav-menu > a {
   background-color: rgba(255, 255, 255, 0.075);
   /* animation-name: animate-open-scroll; */
   animation-duration: 5s;
+}
+
+@media (width < 400px) {
+  .nav-logo{
+    padding: 2px 3px !important;
+
+  }
+
+  .navbar {
+    height: fit-content !important;
+  }
+  
+  .nav-menu {
+    top: 5rem !important;
+  }
+
+  .introContent {
+    padding-top: 16vh !important;
+    /* width: 50vw; */
+  }
+
+  #intro {
+    height: calc(100vh - 5.5rem) !important;
+  }
+  .bg {
+    padding-top: 10px;
+    padding-right: 13px;
+    margin-top: 12px;
+  }
+}
+
+@media (width < 647px){
+  .introContent {
+    /* padding: 20px !important; */
+    background-color: #03011436 !important;
+    z-index: 2 !important;
+  }
+
+  .bg{
+    padding-top: 10px !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {

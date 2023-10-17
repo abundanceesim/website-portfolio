@@ -1,6 +1,7 @@
-import me from "../assets/personal/abundance-snow.png";
+// import me from "../assets/personal/abundance-snow.png";
+import me from "../assets/personal/profile-img-cropped.png";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 
