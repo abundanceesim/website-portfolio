@@ -1,2 +1,2 @@
 # website-portfolio
-Website portfolio made with React.js
+Portfolio website made with React.js
