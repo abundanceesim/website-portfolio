@@ -9,9 +9,9 @@ export default function Artworks() {
           <div className="art-page mb-3">
             <div className="row mt-4">
               {artworks.map((art) => (
-                <div className="col mb-3">
-                  <div className="art-container ">
-                    <Artwork artwork={art} key={art.id} />
+                <div className="col mb-3" key={art.id + "-" + art.description}>
+                  <div className="art-container">
+                    <Artwork artwork={art} />
                   </div>
                 </div>
               ))}

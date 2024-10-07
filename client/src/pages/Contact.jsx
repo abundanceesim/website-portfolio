@@ -5,10 +5,15 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   
-  const msgHolder = 'Lorem ipsum?'
-  const nameHolder = 'The Rock'
-  const emailHolder = 'rocky@gmail.com'
-  const subjectHolder = 'Let\'s get you hired!'
+  // const msgHolder = 'Lorem ipsum?'
+  // const nameHolder = 'The Rock'
+  // const emailHolder = 'rocky@gmail.com'
+  // const subjectHolder = 'Let\'s get you hired!'
+
+  const msgHolder = "Lorem ipsum?";
+  const nameHolder = "John Doe";
+  const emailHolder = "johndoe24@gmail.com";
+  const subjectHolder = "You're awesome, let's get you hired!";
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')

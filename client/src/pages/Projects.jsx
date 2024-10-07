@@ -15,7 +15,7 @@ export default function Projects() {
                   className="col mb-4 project-card"
                   style={{ maxWidth: "min-content" }}
                 >
-                  <ProjectItem project={project} key={project} />
+                  <ProjectItem project={project} key={project.id + "-" + project.shortTitle} />
                   {/* {console.log(project.title)} */}
                 </div>
               ))}

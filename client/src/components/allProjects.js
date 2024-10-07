@@ -13,6 +13,7 @@ const projects = [
     link: "https://github.com/abundanceesim/project-management-app",
     shortTitle: "project-management",
     screenshot: projManagement,
+    demo: "",
     technologies: [
       "react",
       "express",
@@ -27,17 +28,13 @@ const projects = [
   {
     id: 2,
     title: "ACME College REST API",
-    description: "Java-based REST API to simulate the backend of a college system. Built with J2EE, Hibernate, MySQL and JUnit.",
+    description:
+      "Java-based REST API to simulate the backend of a college system. Built with J2EE, Hibernate, MySQL and JUnit.",
     link: "https://github.com/abundanceesim/acmecollege-rest-api",
     shortTitle: "acme-rest-api",
     screenshot: acmeRestApi,
-    technologies: [
-      "java",
-      "junit",
-      "hibernate",
-      "mysql",
-      "postman"
-    ],
+    demo: "",
+    technologies: ["java", "junit", "hibernate", "mysql", "postman"],
   },
   {
     id: 3,
@@ -47,6 +44,7 @@ const projects = [
     link: "https://github.com/abundanceesim/goal-tracker",
     shortTitle: "goal-tracker",
     screenshot: goalTracker,
+    demo: "",
     technologies: [
       "react",
       "express",
@@ -64,6 +62,7 @@ const projects = [
       "Console-based inventory application for the manipulation of records from dataset published by Statistics Canada.",
     link: "https://github.com/abundanceesim/potato-inventory-app",
     shortTitle: "potato-inventory",
+    demo: "",
     screenshot: potatoInventory,
     technologies: ["python", "pytest"],
   },
@@ -74,6 +73,7 @@ const projects = [
       "Basic todo app made for the purpose of learning the basics of React.js",
     link: "https://github.com/abundanceesim/todo-app",
     shortTitle: "todo-app",
+    demo: "https://abundanceesim.github.io/todo-app/",
     screenshot: todoApp,
     technologies: ["react"],
   },
@@ -84,6 +84,7 @@ const projects = [
       "Web application where users can retrieve and modify records of musical instruments of their choice from a MySQL database.",
     link: "https://github.com/abundanceesim/products-web-app",
     shortTitle: "products-app",
+    demo: "",
     screenshot: productsApp,
     technologies: ["mysql", "php", "css", "sql"],
   },
